@@ -16,7 +16,7 @@ namespace MOVIE_MANAGEMENT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangKi());
+            Application.Run(new FormDangNhap2());
         }
     }
 }
