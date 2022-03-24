@@ -32,5 +32,19 @@ namespace MOVIE
                 f2.Show();
             }
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
+
+        private void buttonfogot_Click(object sender, EventArgs e)
+        {
+            FormResetMatKhau1 f1 = new FormResetMatKhau1();
+            
+            f1.Show();
+            Hide();
+        }
     }
 }

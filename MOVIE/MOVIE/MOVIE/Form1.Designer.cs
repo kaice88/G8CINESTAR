@@ -102,6 +102,7 @@
             this.gunaback.Size = new System.Drawing.Size(78, 26);
             this.gunaback.TabIndex = 89;
             this.gunaback.Text = "< Back";
+            this.gunaback.Click += new System.EventHandler(this.gunaback_Click);
             // 
             // gunacreate
             // 

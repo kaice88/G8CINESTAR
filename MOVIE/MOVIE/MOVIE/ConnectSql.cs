@@ -9,7 +9,7 @@ namespace MOVIE
 {
     class ConnectSql
     {
-        private static string stringConnectSql = @"Data Source=LAPTOP-NCFRSETI\SQLEXPRESS;Initial Catalog=RAPPHIM_QL;Integrated Security=True";
+        private static string stringConnectSql = @"Data Source=.\sqlexpress;Initial Catalog=RAPPHIM_QL;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnectSql);

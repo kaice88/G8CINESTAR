@@ -16,5 +16,21 @@ namespace MOVIE
         {
             InitializeComponent();
         }
+        Modify modify = new Modify();
+        private void gunaCreate_Click(object sender, EventArgs e)
+        {
+            string username = txtusername.Text;
+            string password = txtpassword.Text;
+            string query = "Select * from account2 Where username = '" + username + "'and pwd = '" + password + "'";
+            if (modify.accounts(query).Count != 0)
+            {
+                MessageBox.Show("Đăng nhập thành công! ");
+            }
+            else
+            {
+                txtpassword.Text = "";
+                txtusername.Text = "";
+            }
+        }
     }
 }

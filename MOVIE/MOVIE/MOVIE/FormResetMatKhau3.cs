@@ -16,5 +16,16 @@ namespace MOVIE
         {
             InitializeComponent();
         }
+        private void buttonreset_Click(object sender, EventArgs e)
+        {
+            //update vao csdl
+        }
+
+        private void gunaback_Click(object sender, EventArgs e)
+        {
+            FormDangNhap1 formDangNhap1 = new FormDangNhap1();
+            formDangNhap1.Show();
+            Hide();
+        }
     }
 }

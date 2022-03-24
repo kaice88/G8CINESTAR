@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap1));
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonsignup = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonfogot = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.gunaCreate = new Guna.UI2.WinForms.Guna2Button();
@@ -54,37 +54,39 @@
             this.label6.TabIndex = 80;
             this.label6.Text = "Don\'t have an account ?";
             // 
-            // guna2Button2
+            // buttonsignup
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.guna2Button2.Location = new System.Drawing.Point(674, 494);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(82, 31);
-            this.guna2Button2.TabIndex = 79;
-            this.guna2Button2.Text = "Sign up here";
+            this.buttonsignup.BorderRadius = 10;
+            this.buttonsignup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonsignup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonsignup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonsignup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonsignup.FillColor = System.Drawing.Color.White;
+            this.buttonsignup.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonsignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
+            this.buttonsignup.Location = new System.Drawing.Point(674, 494);
+            this.buttonsignup.Name = "buttonsignup";
+            this.buttonsignup.Size = new System.Drawing.Size(82, 31);
+            this.buttonsignup.TabIndex = 79;
+            this.buttonsignup.Text = "Sign up here";
+            this.buttonsignup.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2Button1
+            // buttonfogot
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.guna2Button1.Location = new System.Drawing.Point(624, 406);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 24);
-            this.guna2Button1.TabIndex = 78;
-            this.guna2Button1.Text = "Forgot your password?";
+            this.buttonfogot.BorderRadius = 10;
+            this.buttonfogot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonfogot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonfogot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonfogot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonfogot.FillColor = System.Drawing.Color.White;
+            this.buttonfogot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonfogot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
+            this.buttonfogot.Location = new System.Drawing.Point(624, 406);
+            this.buttonfogot.Name = "buttonfogot";
+            this.buttonfogot.Size = new System.Drawing.Size(180, 24);
+            this.buttonfogot.TabIndex = 78;
+            this.buttonfogot.Text = "Forgot your password?";
+            this.buttonfogot.Click += new System.EventHandler(this.buttonfogot_Click);
             // 
             // label2
             // 
@@ -214,8 +216,8 @@
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.buttonsignup);
+            this.Controls.Add(this.buttonfogot);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.gunaCreate);
@@ -234,8 +236,8 @@
         #endregion
 
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button buttonsignup;
+        private Guna.UI2.WinForms.Guna2Button buttonfogot;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button gunaCreate;

@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ARSoft.Tools.Net, Version=2.2.2.0, Culture=neutral, PublicKeyToken=1940454cd762ec57, processorArchitecture=MSIL">
+      <HintPath>..\packages\ARSoft.Tools.Net.2.2.2\lib\net45\ARSoft.Tools.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4137.9688, Culture=neutral, PublicKeyToken=a4292a325f69b123, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EmailValidation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmailValidator.NET.1.0.5\lib\net45\EmailValidation.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
@@ -74,11 +83,53 @@
     <Compile Include="FormDangNhap2.Designer.cs">
       <DependentUpon>FormDangNhap2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFail1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFail1.Designer.cs">
+      <DependentUpon>FormFail1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFail2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFail2.Designer.cs">
+      <DependentUpon>FormFail2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFail3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFail3.Designer.cs">
+      <DependentUpon>FormFail3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFail4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFail4.Designer.cs">
+      <DependentUpon>FormFail4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFail5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFail5.Designer.cs">
+      <DependentUpon>FormFail5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFail6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFail6.Designer.cs">
+      <DependentUpon>FormFail6.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormResetMatKhau1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormResetMatKhau1.Designer.cs">
       <DependentUpon>FormResetMatKhau1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResetMatKhau3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResetMatKhau3.Designer.cs">
+      <DependentUpon>FormResetMatKhau3.cs</DependentUpon>
     </Compile>
     <Compile Include="FormResetMatKhau2.cs">
       <SubType>Form</SubType>
@@ -86,11 +137,17 @@
     <Compile Include="FormResetMatKhau2.Designer.cs">
       <DependentUpon>FormResetMatKhau2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormResetMatKhau3.cs">
+    <Compile Include="FormResetMatKhau4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormResetMatKhau3.Designer.cs">
-      <DependentUpon>FormResetMatKhau3.cs</DependentUpon>
+    <Compile Include="FormResetMatKhau4.Designer.cs">
+      <DependentUpon>FormResetMatKhau4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuccess.Designer.cs">
+      <DependentUpon>FormSuccess.cs</DependentUpon>
     </Compile>
     <Compile Include="Modify.cs" />
     <Compile Include="Program.cs" />
@@ -104,14 +161,23 @@
     <EmbeddedResource Include="FormDangNhap2.resx">
       <DependentUpon>FormDangNhap2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFail1.resx">
+      <DependentUpon>FormFail1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormResetMatKhau1.resx">
       <DependentUpon>FormResetMatKhau1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResetMatKhau3.resx">
+      <DependentUpon>FormResetMatKhau3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormResetMatKhau2.resx">
       <DependentUpon>FormResetMatKhau2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormResetMatKhau3.resx">
-      <DependentUpon>FormResetMatKhau3.cs</DependentUpon>
+    <EmbeddedResource Include="FormResetMatKhau4.resx">
+      <DependentUpon>FormResetMatKhau4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuccess.resx">
+      <DependentUpon>FormSuccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

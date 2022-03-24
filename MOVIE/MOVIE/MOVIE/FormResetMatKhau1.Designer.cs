@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaCreate = new Guna.UI2.WinForms.Guna2Button();
+            this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.buttonsendemail = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.gunaback = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,45 +84,46 @@
             this.label3.Text = "Please enter your registered email address. \nWe will send instructions to help re" +
     "set your password.";
             // 
-            // guna2TextBox1
+            // txtemail
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(574, 255);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.guna2TextBox1.PlaceholderText = "Email";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(278, 49);
-            this.guna2TextBox1.TabIndex = 104;
+            this.txtemail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
+            this.txtemail.BorderRadius = 20;
+            this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtemail.DefaultText = "";
+            this.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtemail.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtemail.Location = new System.Drawing.Point(574, 255);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.PasswordChar = '\0';
+            this.txtemail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.txtemail.PlaceholderText = "Email";
+            this.txtemail.SelectedText = "";
+            this.txtemail.Size = new System.Drawing.Size(278, 49);
+            this.txtemail.TabIndex = 104;
             // 
-            // gunaCreate
+            // buttonsendemail
             // 
-            this.gunaCreate.BorderRadius = 20;
-            this.gunaCreate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.gunaCreate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.gunaCreate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gunaCreate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gunaCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(90)))), ((int)(((byte)(70)))));
-            this.gunaCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCreate.ForeColor = System.Drawing.Color.White;
-            this.gunaCreate.Location = new System.Drawing.Point(574, 324);
-            this.gunaCreate.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaCreate.Name = "gunaCreate";
-            this.gunaCreate.Size = new System.Drawing.Size(275, 42);
-            this.gunaCreate.TabIndex = 105;
-            this.gunaCreate.Text = "SEND RESET INSTRUCTIONS";
+            this.buttonsendemail.BorderRadius = 20;
+            this.buttonsendemail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonsendemail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonsendemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonsendemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonsendemail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(90)))), ((int)(((byte)(70)))));
+            this.buttonsendemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonsendemail.ForeColor = System.Drawing.Color.White;
+            this.buttonsendemail.Location = new System.Drawing.Point(574, 324);
+            this.buttonsendemail.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonsendemail.Name = "buttonsendemail";
+            this.buttonsendemail.Size = new System.Drawing.Size(275, 42);
+            this.buttonsendemail.TabIndex = 105;
+            this.buttonsendemail.Text = "SEND RESET INSTRUCTIONS";
+            this.buttonsendemail.Click += new System.EventHandler(this.buttonsendemail_Click);
             // 
             // label4
             // 
@@ -150,6 +151,7 @@
             this.gunaback.Size = new System.Drawing.Size(78, 26);
             this.gunaback.TabIndex = 107;
             this.gunaback.Text = "< Back";
+            this.gunaback.Click += new System.EventHandler(this.gunaback_Click);
             // 
             // FormResetMatKhau1
             // 
@@ -159,8 +161,8 @@
             this.ClientSize = new System.Drawing.Size(968, 584);
             this.Controls.Add(this.gunaback);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.gunaCreate);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.buttonsendemail);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -180,8 +182,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Button gunaCreate;
+        private Guna.UI2.WinForms.Guna2TextBox txtemail;
+        private Guna.UI2.WinForms.Guna2Button buttonsendemail;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button gunaback;
     }
