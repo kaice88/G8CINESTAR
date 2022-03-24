@@ -13,5 +13,5 @@ CREATE TABLE account2 (
 	email char(40) NOT NULL,
 	role int DEFAULT 1 NOT NULL)
 GO
- 
- SET IDENTITY_INSERT account2 ON;
+
+
