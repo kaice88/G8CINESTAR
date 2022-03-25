@@ -36,6 +36,7 @@
             this.gunaChange = new Guna.UI2.WinForms.Guna2Button();
             this.gunaback = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelfail = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,12 +142,24 @@
             this.pictureBox1.TabIndex = 107;
             this.pictureBox1.TabStop = false;
             // 
+            // labelfail
+            // 
+            this.labelfail.AutoSize = true;
+            this.labelfail.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
+            this.labelfail.Location = new System.Drawing.Point(574, 258);
+            this.labelfail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelfail.Name = "labelfail";
+            this.labelfail.Size = new System.Drawing.Size(0, 17);
+            this.labelfail.TabIndex = 116;
+            // 
             // FormResetMatKhau2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 584);
+            this.Controls.Add(this.labelfail);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gunaback);
             this.Controls.Add(this.gunaChange);
@@ -171,5 +184,6 @@
         private Guna.UI2.WinForms.Guna2Button gunaChange;
         private Guna.UI2.WinForms.Guna2Button gunaback;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelfail;
     }
 }

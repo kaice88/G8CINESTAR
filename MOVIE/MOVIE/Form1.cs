@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MOVIE
 {
-    public partial class FormFail9 : Form
+    public partial class Form1 : Form
     {
-        public FormFail9()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void buttoncontinue_Click(object sender, EventArgs e)
-        {
-            Hide();
         }
     }
 }

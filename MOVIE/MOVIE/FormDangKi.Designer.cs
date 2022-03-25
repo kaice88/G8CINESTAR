@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangKi));
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.gunaback = new Guna.UI2.WinForms.Guna2Button();
             this.gunacreate = new Guna.UI2.WinForms.Guna2Button();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,41 +37,12 @@
             this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtphonenumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelfail = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.label4.Location = new System.Drawing.Point(574, 155);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(283, 13);
-            this.label4.TabIndex = 77;
-            this.label4.Text = "______________________________________________";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.label2.Location = new System.Drawing.Point(574, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 34);
-            this.label2.TabIndex = 76;
-            this.label2.Text = "Enter your personal details and start \r\nthe application with us";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.label1.Location = new System.Drawing.Point(574, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 27);
-            this.label1.TabIndex = 75;
-            this.label1.Text = "Account Signup";
             // 
             // gunaback
             // 
@@ -237,12 +205,60 @@
             this.pictureBox2.TabIndex = 95;
             this.pictureBox2.TabStop = false;
             // 
+            // labelfail
+            // 
+            this.labelfail.AutoSize = true;
+            this.labelfail.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
+            this.labelfail.Location = new System.Drawing.Point(574, 147);
+            this.labelfail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelfail.Name = "labelfail";
+            this.labelfail.Size = new System.Drawing.Size(0, 17);
+            this.labelfail.TabIndex = 96;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.label4.Location = new System.Drawing.Point(574, 150);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(283, 13);
+            this.label4.TabIndex = 99;
+            this.label4.Text = "______________________________________________";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.label2.Location = new System.Drawing.Point(574, 115);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 34);
+            this.label2.TabIndex = 98;
+            this.label2.Text = "Enter your personal details and start \r\nthe application with us";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
+            this.label1.Location = new System.Drawing.Point(574, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(170, 27);
+            this.label1.TabIndex = 97;
+            this.label1.Text = "Account Signup";
+            // 
             // FormDangKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 584);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelfail);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtphonenumber);
             this.Controls.Add(this.txtemail);
@@ -251,9 +267,6 @@
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.gunaback);
             this.Controls.Add(this.gunacreate);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "FormDangKi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -264,9 +277,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button gunaback;
         private Guna.UI2.WinForms.Guna2Button gunacreate;
         private Guna.UI2.WinForms.Guna2TextBox txtusername;
@@ -275,6 +285,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txtemail;
         private Guna.UI2.WinForms.Guna2TextBox txtphonenumber;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelfail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

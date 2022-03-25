@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaback = new Guna.UI2.WinForms.Guna2Button();
+            this.labelfail = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,12 +57,13 @@
             this.txtconfirmpass.Location = new System.Drawing.Point(574, 316);
             this.txtconfirmpass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtconfirmpass.Name = "txtconfirmpass";
-            this.txtconfirmpass.PasswordChar = '\0';
+            this.txtconfirmpass.PasswordChar = '●';
             this.txtconfirmpass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
             this.txtconfirmpass.PlaceholderText = "Confirm  password";
             this.txtconfirmpass.SelectedText = "";
             this.txtconfirmpass.Size = new System.Drawing.Size(278, 49);
             this.txtconfirmpass.TabIndex = 104;
+            this.txtconfirmpass.UseSystemPasswordChar = true;
             // 
             // txtnewpass
             // 
@@ -108,7 +110,7 @@
             this.buttonreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonreset.ForeColor = System.Drawing.Color.White;
             this.buttonreset.Location = new System.Drawing.Point(574, 413);
-            this.buttonreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonreset.Margin = new System.Windows.Forms.Padding(2);
             this.buttonreset.Name = "buttonreset";
             this.buttonreset.Size = new System.Drawing.Size(275, 42);
             this.buttonreset.TabIndex = 97;
@@ -154,6 +156,17 @@
             this.gunaback.Text = "< Back";
             this.gunaback.Click += new System.EventHandler(this.gunaback_Click);
             // 
+            // labelfail
+            // 
+            this.labelfail.AutoSize = true;
+            this.labelfail.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
+            this.labelfail.Location = new System.Drawing.Point(576, 203);
+            this.labelfail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelfail.Name = "labelfail";
+            this.labelfail.Size = new System.Drawing.Size(0, 17);
+            this.labelfail.TabIndex = 117;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -171,6 +184,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 584);
+            this.Controls.Add(this.labelfail);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gunaback);
             this.Controls.Add(this.txtconfirmpass);
@@ -198,5 +212,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button gunaback;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelfail;
     }
 }

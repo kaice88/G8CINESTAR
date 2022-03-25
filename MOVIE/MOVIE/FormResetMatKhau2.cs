@@ -12,17 +12,19 @@ namespace MOVIE
 {
     public partial class FormResetMatKhau2 : Form
     {
-        public delegate void MyDel(string code);
+        public delegate void MyDel(string code, string email);
         public MyDel d;
-        string otp;
+        string otp, email;
+
         public FormResetMatKhau2()
         {
             InitializeComponent();
             d = new MyDel(GetCode);
         }
-        private void GetCode(string code)
+        private void GetCode(string code, string xemail)
         {
             otp = code;
+            email = xemail;
         }
         private void gunaChange_Click(object sender, EventArgs e)
         {
@@ -30,14 +32,14 @@ namespace MOVIE
             {
                 FormResetMatKhau3 f3 = new FormResetMatKhau3();
                 f3.Show();
+                f3.d(otp, email);
                 Hide();
             }
             else
             {
-                FormResetMatKhau4 f4 = new FormResetMatKhau4();
-                f4.d(otp);
-                f4.Show();
-                Hide();
+                labelfail.Text = "The security code is incorrect. Try again.";
+                txtcode.Text = "";
+                return;
             }
         }
 

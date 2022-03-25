@@ -40,6 +40,14 @@ namespace MOVIE
                     return false;
             }
         }
+        private void formfail(string mess, int x, int y, int z, int t) // hiện thông báo lỗi
+        {
+            this.label1.Location = new System.Drawing.Point(574, x); // 124,110
+            this.label2.Location = new System.Drawing.Point(574, y); // 163,149
+            this.label4.Location = new System.Drawing.Point(574, z); // 198,184
+            this.labelfail.Location = new System.Drawing.Point(574, t);// 226,212
+            labelfail.Text = mess;
+        }
         private void buttonsendemail_Click(object sender, EventArgs e)
         {
             string sendto = txtemail.Text;
@@ -50,8 +58,7 @@ namespace MOVIE
                 // kt có đk chưa
                 if (modify.accounts("Select * from account2 where email = '" + sendto + "'").Count == 0)
                 {
-                    FormFail7 f7 = new FormFail7();
-                    f7.Show();
+                    formfail("Invalid Email! Email address is not registered!", 124,163,198,226); 
                     return;
                 }
 
@@ -80,21 +87,20 @@ namespace MOVIE
                 // truyền otp vào các form để kiểm tra
                 
                 FormResetMatKhau2 f2 = new FormResetMatKhau2();
-                f2.d(content);
+                f2.d(content,sendto);
                 f2.Show();
-
                 Hide();
             }
             else
             {
-                FormFail3 f3 = new FormFail3();
-                f3.Show();
+                formfail("Invalid Email! Email address does not exist!", 124,163,198,226);
+                return;
             }
         }
 
         private void gunaback_Click(object sender, EventArgs e)
         {
-            FormDangNhap1 f = new FormDangNhap1();
+            FormDangNhap f = new FormDangNhap();
             f.Show();
             Hide();
         }

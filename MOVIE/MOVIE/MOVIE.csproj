@@ -65,77 +65,23 @@
   <ItemGroup>
     <Compile Include="account.cs" />
     <Compile Include="ConnectSql.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDangKi.Designer.cs">
       <DependentUpon>FormDangKi.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDangNhap1.cs">
+    <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDangNhap1.Designer.cs">
-      <DependentUpon>FormDangNhap1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormDangNhap2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDangNhap2.Designer.cs">
-      <DependentUpon>FormDangNhap2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail1.Designer.cs">
-      <DependentUpon>FormFail1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail2.Designer.cs">
-      <DependentUpon>FormFail2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail3.Designer.cs">
-      <DependentUpon>FormFail3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail4.Designer.cs">
-      <DependentUpon>FormFail4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail5.Designer.cs">
-      <DependentUpon>FormFail5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail6.Designer.cs">
-      <DependentUpon>FormFail6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail7.Designer.cs">
-      <DependentUpon>FormFail7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail8.Designer.cs">
-      <DependentUpon>FormFail8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormFail9.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFail9.Designer.cs">
-      <DependentUpon>FormFail9.cs</DependentUpon>
+    <Compile Include="FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FormResetMatKhau1.cs">
       <SubType>Form</SubType>
@@ -155,12 +101,6 @@
     <Compile Include="FormResetMatKhau2.Designer.cs">
       <DependentUpon>FormResetMatKhau2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormResetMatKhau4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormResetMatKhau4.Designer.cs">
-      <DependentUpon>FormResetMatKhau4.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormSuccess.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,41 +110,14 @@
     <Compile Include="Modify.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDangKi.resx">
       <DependentUpon>FormDangKi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDangNhap1.resx">
-      <DependentUpon>FormDangNhap1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormDangNhap2.resx">
-      <DependentUpon>FormDangNhap2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail1.resx">
-      <DependentUpon>FormFail1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail2.resx">
-      <DependentUpon>FormFail2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail3.resx">
-      <DependentUpon>FormFail3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail4.resx">
-      <DependentUpon>FormFail4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail5.resx">
-      <DependentUpon>FormFail5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail6.resx">
-      <DependentUpon>FormFail6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail7.resx">
-      <DependentUpon>FormFail7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail8.resx">
-      <DependentUpon>FormFail8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFail9.resx">
-      <DependentUpon>FormFail9.cs</DependentUpon>
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormResetMatKhau1.resx">
       <DependentUpon>FormResetMatKhau1.cs</DependentUpon>
@@ -214,9 +127,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormResetMatKhau2.resx">
       <DependentUpon>FormResetMatKhau2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormResetMatKhau4.resx">
-      <DependentUpon>FormResetMatKhau4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuccess.resx">
       <DependentUpon>FormSuccess.cs</DependentUpon>

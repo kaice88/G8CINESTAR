@@ -1,6 +1,6 @@
 ﻿namespace MOVIE
 {
-    partial class FormDangNhap1
+    partial class FormDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.label6 = new System.Windows.Forms.Label();
             this.buttonsignup = new Guna.UI2.WinForms.Guna2Button();
             this.buttonfogot = new Guna.UI2.WinForms.Guna2Button();
@@ -40,6 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelfail = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.label2.Location = new System.Drawing.Point(574, 140);
+            this.label2.Location = new System.Drawing.Point(574, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(261, 34);
             this.label2.TabIndex = 77;
@@ -133,7 +134,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
-            this.label4.Location = new System.Drawing.Point(574, 175);
+            this.label4.Location = new System.Drawing.Point(574, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(270, 20);
             this.label4.TabIndex = 71;
@@ -144,7 +145,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.label1.Location = new System.Drawing.Point(574, 109);
+            this.label1.Location = new System.Drawing.Point(574, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 27);
             this.label1.TabIndex = 69;
@@ -200,12 +201,24 @@
             this.txtpassword.Location = new System.Drawing.Point(574, 282);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.PasswordChar = '*';
+            this.txtpassword.PasswordChar = '●';
             this.txtpassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
             this.txtpassword.PlaceholderText = "Password";
             this.txtpassword.SelectedText = "";
             this.txtpassword.Size = new System.Drawing.Size(278, 49);
             this.txtpassword.TabIndex = 93;
+            this.txtpassword.UseSystemPasswordChar = true;
+            // 
+            // labelfail
+            // 
+            this.labelfail.AutoSize = true;
+            this.labelfail.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
+            this.labelfail.Location = new System.Drawing.Point(574, 173);
+            this.labelfail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelfail.Name = "labelfail";
+            this.labelfail.Size = new System.Drawing.Size(0, 17);
+            this.labelfail.TabIndex = 95;
             // 
             // FormDangNhap1
             // 
@@ -213,6 +226,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 584);
+            this.Controls.Add(this.labelfail);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label6);
@@ -246,5 +260,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtusername;
         private Guna.UI2.WinForms.Guna2TextBox txtpassword;
+        private System.Windows.Forms.Label labelfail;
     }
 }

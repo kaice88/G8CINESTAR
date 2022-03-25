@@ -10,8 +10,6 @@ C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.exe
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.pdb
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\bin\Debug\Guna.UI2.dll
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.csproj.CopyComplete
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormDangNhap1.resources
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormDangNhap2.resources
 C:\Users\PC\Desktop\KI2-NAM2\PBL3 - CNPM\G8CINESTAR\MOVIE\MOVIE\bin\Debug\MOVIE.exe.config
 C:\Users\PC\Desktop\KI2-NAM2\PBL3 - CNPM\G8CINESTAR\MOVIE\MOVIE\bin\Debug\MOVIE.exe
 C:\Users\PC\Desktop\KI2-NAM2\PBL3 - CNPM\G8CINESTAR\MOVIE\MOVIE\bin\Debug\MOVIE.pdb
@@ -114,7 +112,8 @@ C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormFa
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormResetMatKhau1.resources
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormResetMatKhau3.resources
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormResetMatKhau2.resources
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormResetMatKhau4.resources
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormSuccess.resources
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormFail8.resources
 C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormFail9.resources
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.Form1.resources
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE\MOVIE\obj\Debug\MOVIE.FormDangNhap.resources

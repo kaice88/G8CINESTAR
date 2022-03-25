@@ -10,30 +10,42 @@ using System.Windows.Forms;
 
 namespace MOVIE
 {
-    public partial class FormDangNhap2 : Form
+    public partial class FormDangNhap : Form
     {
-        public FormDangNhap2()
+        public FormDangNhap()
         {
             InitializeComponent();
         }
         Modify modify = new Modify();
+
+        private void formfail(string mess, int x, int y, int z, int t) // hiện thông báo lỗi
+        {
+            this.label1.Location = new System.Drawing.Point(574, x); // 94, 80
+            this.label2.Location = new System.Drawing.Point(574, y); // 125, 111
+            this.label4.Location = new System.Drawing.Point(574, z); // 160,146
+            this.labelfail.Location = new System.Drawing.Point(574, t);// 187,173
+            labelfail.Text = mess;
+        }
         private void buttonlogin_Click(object sender, EventArgs e)
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
             string query = "Select * from account2 Where username = '" + username + "'and pwd = '" + password + "'";
-            if (modify.accounts(query).Count != 0)
+            
+            if (modify.accounts(query).Count != 0) // kiểm tra mk vs pwd
             {
-                FormSuccess f = new FormSuccess();
+                Form1 f = new Form1();
                 f.Show();
+                Hide();
             }
             else
             {
+                formfail("The username or password is incorrect. Try again.", 94, 125, 160, 187);
                 txtpassword.Text = "";
                 txtusername.Text = "";
+                return;            
             }
         }
-
         private void buttonfogot_Click(object sender, EventArgs e)
         {
             FormResetMatKhau1 f1 = new FormResetMatKhau1();

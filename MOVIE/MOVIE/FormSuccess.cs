@@ -20,6 +20,7 @@ namespace MOVIE
         private void buttoncontinue_Click(object sender, EventArgs e)
         {
             Hide();
+            
         }
     }
 }

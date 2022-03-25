@@ -40,5 +40,16 @@ namespace MOVIE
 
             }
         }
+        public void ResetPass(string query) // dùng để reset pass
+        {
+            using (SqlConnection sqlConnection = ConnectSql.GetSqlConnection())
+            {
+                sqlConnection.Open();
+                sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.ExecuteNonQuery(); //thực thi câu truy vấn
+                sqlConnection.Close();
+
+            }
+        }
     }
 }
