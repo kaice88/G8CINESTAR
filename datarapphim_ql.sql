@@ -11,7 +11,7 @@ CREATE TABLE TBStaff (
 	pwd char(30) NOT NULL,
 	phone_number char(20) NOT NULL,
 	email char(40) NOT NULL,
-	pit int NOT NULL)
+	role bit NOT NULL)
 GO
 
 
