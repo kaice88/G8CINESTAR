@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.label6 = new System.Windows.Forms.Label();
             this.buttonsignup = new Guna.UI2.WinForms.Guna2Button();
@@ -39,8 +40,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelfail = new System.Windows.Forms.Label();
+            this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.buttoneyescl = new Guna.UI2.WinForms.Guna2Button();
+            this.buttoneyes = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +52,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(111)))), ((int)(((byte)(121)))));
-            this.label6.Location = new System.Drawing.Point(641, 472);
+            this.label6.Location = new System.Drawing.Point(641, 479);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(163, 19);
@@ -65,7 +69,7 @@
             this.buttonsignup.FillColor = System.Drawing.Color.White;
             this.buttonsignup.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonsignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.buttonsignup.Location = new System.Drawing.Point(674, 494);
+            this.buttonsignup.Location = new System.Drawing.Point(674, 501);
             this.buttonsignup.Name = "buttonsignup";
             this.buttonsignup.Size = new System.Drawing.Size(82, 31);
             this.buttonsignup.TabIndex = 79;
@@ -82,7 +86,7 @@
             this.buttonfogot.FillColor = System.Drawing.Color.White;
             this.buttonfogot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonfogot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.buttonfogot.Location = new System.Drawing.Point(624, 406);
+            this.buttonfogot.Location = new System.Drawing.Point(624, 413);
             this.buttonfogot.Name = "buttonfogot";
             this.buttonfogot.Size = new System.Drawing.Size(180, 24);
             this.buttonfogot.TabIndex = 78;
@@ -105,7 +109,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
-            this.label8.Location = new System.Drawing.Point(574, 433);
+            this.label8.Location = new System.Drawing.Point(574, 440);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(270, 20);
             this.label8.TabIndex = 76;
@@ -121,7 +125,7 @@
             this.buttonlogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(90)))), ((int)(((byte)(70)))));
             this.buttonlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonlogin.ForeColor = System.Drawing.Color.White;
-            this.buttonlogin.Location = new System.Drawing.Point(574, 353);
+            this.buttonlogin.Location = new System.Drawing.Point(574, 360);
             this.buttonlogin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonlogin.Name = "buttonlogin";
             this.buttonlogin.Size = new System.Drawing.Size(275, 42);
@@ -175,6 +179,9 @@
             this.txtusername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtusername.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtusername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtusername.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtusername.IconLeft")));
+            this.txtusername.IconLeftSize = new System.Drawing.Size(22, 22);
+            this.txtusername.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtusername.Location = new System.Drawing.Point(574, 215);
             this.txtusername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtusername.Name = "txtusername";
@@ -184,6 +191,17 @@
             this.txtusername.SelectedText = "";
             this.txtusername.Size = new System.Drawing.Size(278, 49);
             this.txtusername.TabIndex = 91;
+            // 
+            // labelfail
+            // 
+            this.labelfail.AutoSize = true;
+            this.labelfail.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
+            this.labelfail.Location = new System.Drawing.Point(574, 173);
+            this.labelfail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelfail.Name = "labelfail";
+            this.labelfail.Size = new System.Drawing.Size(0, 17);
+            this.labelfail.TabIndex = 95;
             // 
             // txtpassword
             // 
@@ -198,6 +216,8 @@
             this.txtpassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtpassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtpassword.IconLeft")));
+            this.txtpassword.IconLeftSize = new System.Drawing.Size(25, 25);
             this.txtpassword.Location = new System.Drawing.Point(574, 282);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpassword.Name = "txtpassword";
@@ -209,23 +229,56 @@
             this.txtpassword.TabIndex = 93;
             this.txtpassword.UseSystemPasswordChar = true;
             // 
-            // labelfail
+            // buttoneyescl
             // 
-            this.labelfail.AutoSize = true;
-            this.labelfail.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelfail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
-            this.labelfail.Location = new System.Drawing.Point(574, 173);
-            this.labelfail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelfail.Name = "labelfail";
-            this.labelfail.Size = new System.Drawing.Size(0, 17);
-            this.labelfail.TabIndex = 95;
+            this.buttoneyescl.Animated = true;
+            this.buttoneyescl.BackColor = System.Drawing.Color.Transparent;
+            this.buttoneyescl.BorderRadius = 8;
+            this.buttoneyescl.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttoneyescl.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttoneyescl.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttoneyescl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttoneyescl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttoneyescl.FillColor = System.Drawing.Color.White;
+            this.buttoneyescl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttoneyescl.ForeColor = System.Drawing.Color.White;
+            this.buttoneyescl.Image = ((System.Drawing.Image)(resources.GetObject("buttoneyescl.Image")));
+            this.buttoneyescl.ImageSize = new System.Drawing.Size(25, 25);
+            this.buttoneyescl.Location = new System.Drawing.Point(823, 296);
+            this.buttoneyescl.Name = "buttoneyescl";
+            this.buttoneyescl.Size = new System.Drawing.Size(21, 21);
+            this.buttoneyescl.TabIndex = 96;
+            this.buttoneyescl.Click += new System.EventHandler(this.buttoneyescl_Click);
             // 
-            // FormDangNhap1
+            // buttoneyes
+            // 
+            this.buttoneyes.Animated = true;
+            this.buttoneyes.BackColor = System.Drawing.Color.Transparent;
+            this.buttoneyes.BorderRadius = 8;
+            this.buttoneyes.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttoneyes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttoneyes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttoneyes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttoneyes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttoneyes.FillColor = System.Drawing.Color.White;
+            this.buttoneyes.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttoneyes.ForeColor = System.Drawing.Color.White;
+            this.buttoneyes.Image = ((System.Drawing.Image)(resources.GetObject("buttoneyes.Image")));
+            this.buttoneyes.ImageSize = new System.Drawing.Size(25, 25);
+            this.buttoneyes.Location = new System.Drawing.Point(823, 296);
+            this.buttoneyes.Name = "buttoneyes";
+            this.buttoneyes.Size = new System.Drawing.Size(21, 21);
+            this.buttoneyes.TabIndex = 97;
+            this.buttoneyes.Click += new System.EventHandler(this.buttoneyes_Click);
+            // 
+            // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 584);
+            this.Controls.Add(this.buttoneyes);
+            this.Controls.Add(this.buttoneyescl);
             this.Controls.Add(this.labelfail);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
@@ -238,7 +291,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "FormDangNhap1";
+            this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangNhap1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -259,7 +312,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtusername;
-        private Guna.UI2.WinForms.Guna2TextBox txtpassword;
         private System.Windows.Forms.Label labelfail;
+        private Guna.UI2.WinForms.Guna2TextBox txtpassword;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2Button buttoneyescl;
+        private Guna.UI2.WinForms.Guna2Button buttoneyes;
     }
 }

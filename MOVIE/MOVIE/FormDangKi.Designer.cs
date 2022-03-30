@@ -46,19 +46,20 @@
             // 
             // gunaback
             // 
-            this.gunaback.BorderRadius = 10;
+            this.gunaback.BorderRadius = 21;
             this.gunaback.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.gunaback.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.gunaback.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunaback.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunaback.FillColor = System.Drawing.Color.White;
-            this.gunaback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gunaback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.gunaback.Location = new System.Drawing.Point(451, 43);
+            this.gunaback.Image = ((System.Drawing.Image)(resources.GetObject("gunaback.Image")));
+            this.gunaback.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaback.Location = new System.Drawing.Point(448, 39);
             this.gunaback.Name = "gunaback";
-            this.gunaback.Size = new System.Drawing.Size(78, 26);
+            this.gunaback.Size = new System.Drawing.Size(55, 45);
             this.gunaback.TabIndex = 89;
-            this.gunaback.Text = "< Back";
             this.gunaback.Click += new System.EventHandler(this.gunaback_Click);
             // 
             // gunacreate

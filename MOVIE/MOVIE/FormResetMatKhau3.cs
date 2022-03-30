@@ -63,6 +63,36 @@ namespace MOVIE
 
         }
 
+        private void buttoneyes_Click(object sender, EventArgs e)
+        {
+            if (txtnewpass.UseSystemPasswordChar == true)
+            {
+                buttoneyescl.BringToFront();
+                txtnewpass.UseSystemPasswordChar = false;
+                txtnewpass.PasswordChar = '\0';
+                
+            }
+        }
+
+        private void buttoneyescl_Click(object sender, EventArgs e)
+        {
+            if (txtnewpass.UseSystemPasswordChar == false)
+            {
+                buttoneyes.BringToFront();
+                txtnewpass.UseSystemPasswordChar = true;
+                txtnewpass.PasswordChar = '●';
+            }
+        }
+
+        private void txtconfirmpass_TextChanged(object sender, EventArgs e)
+        {
+            if(txtconfirmpass.Text == txtnewpass.Text)
+            {
+                gunacheck.Visible = true;
+            }
+            else gunacheck.Visible = false;
+        }
+
         private void gunaback_Click(object sender, EventArgs e)
         {
             FormDangNhap formDangNhap1 = new FormDangNhap();

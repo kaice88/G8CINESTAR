@@ -35,8 +35,8 @@
             this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
             this.buttonsendemail = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.gunaback = new Guna.UI2.WinForms.Guna2Button();
             this.labelfail = new System.Windows.Forms.Label();
+            this.gunaback = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +87,8 @@
             this.txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtemail.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtemail.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtemail.IconLeft")));
+            this.txtemail.IconLeftSize = new System.Drawing.Size(25, 25);
             this.txtemail.Location = new System.Drawing.Point(574, 255);
             this.txtemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtemail.Name = "txtemail";
@@ -126,23 +128,6 @@
             this.label4.TabIndex = 106;
             this.label4.Text = "_____________________________";
             // 
-            // gunaback
-            // 
-            this.gunaback.BorderRadius = 10;
-            this.gunaback.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.gunaback.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.gunaback.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gunaback.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gunaback.FillColor = System.Drawing.Color.White;
-            this.gunaback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
-            this.gunaback.Location = new System.Drawing.Point(451, 43);
-            this.gunaback.Name = "gunaback";
-            this.gunaback.Size = new System.Drawing.Size(78, 26);
-            this.gunaback.TabIndex = 107;
-            this.gunaback.Text = "< Back";
-            this.gunaback.Click += new System.EventHandler(this.gunaback_Click);
-            // 
             // labelfail
             // 
             this.labelfail.AutoSize = true;
@@ -154,14 +139,32 @@
             this.labelfail.Size = new System.Drawing.Size(0, 17);
             this.labelfail.TabIndex = 118;
             // 
+            // gunaback
+            // 
+            this.gunaback.BorderRadius = 21;
+            this.gunaback.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gunaback.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gunaback.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gunaback.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gunaback.FillColor = System.Drawing.Color.White;
+            this.gunaback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.gunaback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(45)))), ((int)(((byte)(29)))));
+            this.gunaback.Image = ((System.Drawing.Image)(resources.GetObject("gunaback.Image")));
+            this.gunaback.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaback.Location = new System.Drawing.Point(448, 39);
+            this.gunaback.Name = "gunaback";
+            this.gunaback.Size = new System.Drawing.Size(55, 45);
+            this.gunaback.TabIndex = 119;
+            this.gunaback.Click += new System.EventHandler(this.gunaback_Click);
+            // 
             // FormResetMatKhau1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 584);
-            this.Controls.Add(this.labelfail);
             this.Controls.Add(this.gunaback);
+            this.Controls.Add(this.labelfail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonsendemail);
             this.Controls.Add(this.txtemail);
@@ -185,7 +188,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtemail;
         private Guna.UI2.WinForms.Guna2Button buttonsendemail;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2Button gunaback;
         private System.Windows.Forms.Label labelfail;
+        private Guna.UI2.WinForms.Guna2Button gunaback;
     }
 }

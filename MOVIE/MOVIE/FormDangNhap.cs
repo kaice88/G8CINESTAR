@@ -59,5 +59,25 @@ namespace MOVIE
             f1.Show();
             Hide();
         }
-    }
+
+        private void buttoneyescl_Click(object sender, EventArgs e)
+        {
+            if (txtpassword.UseSystemPasswordChar == false )
+            {
+                buttoneyes.BringToFront();
+                txtpassword.UseSystemPasswordChar = true;
+                txtpassword.PasswordChar = '●';
+            }
+        }
+
+        private void buttoneyes_Click(object sender, EventArgs e)
+        {
+            if (txtpassword.UseSystemPasswordChar == true)
+            {
+                buttoneyescl.BringToFront();
+                txtpassword.UseSystemPasswordChar = false;
+                txtpassword.PasswordChar = '\0';
+            }
+        }
+    } 
 }
