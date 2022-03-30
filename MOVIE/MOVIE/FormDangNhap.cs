@@ -32,7 +32,13 @@ namespace MOVIE
             string password = txtpassword.Text;
             string query = "Select * from TBStaff Where username = '" + username + "'and pwd = '" + password + "'";
             
-            if (modify.accounts(query).Count != 0) // kiểm tra mk vs pwd
+            //if (modify.accounts(query).Count != 0) // kiểm tra mk vs pwd
+            //{
+            //    Form1 f = new Form1();
+            //    f.Show();
+            //    Hide();
+            //}
+            if (modify.QLNV(query).Tables[0].Rows.Count != 0)
             {
                 Form1 f = new Form1();
                 f.Show();

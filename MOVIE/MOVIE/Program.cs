@@ -16,7 +16,7 @@ namespace MOVIE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormResetMatKhau3());
+            Application.Run(new FormDangKi());
         }
     }
 }

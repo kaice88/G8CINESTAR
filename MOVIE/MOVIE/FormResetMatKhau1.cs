@@ -56,9 +56,14 @@ namespace MOVIE
             if (check)
             {
                 // kt có đk chưa
-                if (modify.accounts("Select * from account2 where email = '" + sendto + "'").Count == 0)
+                //if (modify.accounts("Select * from account2 where email = '" + sendto + "'").Count == 0)
+                //{
+                //    formfail("Invalid Email! Email address is not registered!", 124,163,198,226); 
+                //    return;
+                //}
+                if (modify.QLNV("Select * from TBStaff where email = '" + sendto + "'").Tables[0].Rows.Count == 0)
                 {
-                    formfail("Invalid Email! Email address is not registered!", 124,163,198,226); 
+                    formfail("Invalid Email! Email address is not registered!", 124, 163, 198, 226);
                     return;
                 }
 

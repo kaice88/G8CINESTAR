@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace MOVIE
 {
@@ -13,7 +14,10 @@ namespace MOVIE
 
         SqlCommand sqlCommand; // dùng để truy vấn các câu lệnh insert, update, ...
         SqlDataReader dataReader; // dùng để truy vẫn dữ liệu trong bảng
-        public List<account> accounts(string query)
+        DataSet data = new DataSet();
+        DataTable TBStaff = new DataTable();
+ 
+        /*public List<account> accounts(string query) 
         {
             List<account> accounts = new List<account>();
             using (SqlConnection sqlConnection = ConnectSql.GetSqlConnection())
@@ -28,7 +32,7 @@ namespace MOVIE
                 sqlConnection.Close();
             }
             return accounts;
-        }
+        }*/
         public void Command(string query) // dùng để đăng ký
         {
             using (SqlConnection sqlConnection = ConnectSql.GetSqlConnection())
@@ -50,6 +54,36 @@ namespace MOVIE
                 sqlConnection.Close();
 
             }
+        }
+        public DataSet QLNV(string query) // 
+        {
+            using (SqlConnection sqlConnection = ConnectSql.GetSqlConnection())
+            {
+                sqlConnection.Open();
+                //sqlCommand = new SqlCommand(query, sqlConnection);
+                //sqlCommand.ExecuteNonQuery(); //thực thi câu truy vấn
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, sqlConnection);
+                TBStaff.TableName = "TBStaff";
+                
+                bool check = true;
+                for (int i = 0; i < data.Tables.Count; i++)
+                {
+                    if(data.Tables[i].TableName == "TBStaff")
+                    {
+                        TBStaff.Rows.Clear();
+                        dataAdapter.Fill(TBStaff);
+                        check = false;
+                    }
+                }
+                if (check)
+                {
+                    dataAdapter.Fill(TBStaff);
+                    data.Tables.Add(TBStaff);
+                }
+
+                sqlConnection.Close();
+            }
+            return data;
         }
     }
 }

@@ -74,8 +74,19 @@ namespace MOVIE
           
 
             // kiểm tra có trùng không
-            if (modify.accounts("Select * from TBStaff where email = '" + email + "'").Count != 0) { formfail("Invalid Email! Email address is already registered!", 74, 105, 140, 161); return; }//form4 
-            if (modify.accounts("Select * from TBStaff where username = '" + username + "'").Count != 0) { formfail("Invalid Username! Username is already being used!", 74, 105, 140, 161); return; }//form6 
+            //if (modify.accounts("Select * from TBStaff where email = '" + email + "'").Count != 0) { formfail("Invalid Email! Email address is already registered!", 74, 105, 140, 161); return; }//form4 
+            //if (modify.accounts("Select * from TBStaff where username = '" + username + "'").Count != 0) { formfail("Invalid Username! Username is already being used!", 74, 105, 140, 161); return; }//form6 
+
+            if (modify.QLNV("Select * from TBStaff where email = '" + email + "'").Tables[0].Rows.Count != 0)
+            {
+                formfail("Invalid Email! Email address is already registered!", 74, 105, 140, 161); 
+                return;
+            }
+            if (modify.QLNV("Select * from TBStaff where username = '" + username + "'").Tables[0].Rows.Count != 0)
+            {
+                formfail("Invalid Username! Username is already being used!", 74, 105, 140, 161); 
+                return;
+            }
 
             // kiểm tra email có tồn tại ko
             bool check = CheckEmailExist(email);
