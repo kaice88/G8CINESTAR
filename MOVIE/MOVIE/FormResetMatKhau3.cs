@@ -38,7 +38,7 @@ namespace MOVIE
                 {
                     labelfail.Text = "";
                     string password = txtconfirmpass.Text;
-                    string query = "Update account2 Set pwd = '" + password + "' Where email = '" + email + "';";
+                    string query = "Update TBStaff Set pwd = '" + password + "' Where email = '" + email + "';";
                     modify.ResetPass(query);
 
                     FormDangNhap f = new FormDangNhap();

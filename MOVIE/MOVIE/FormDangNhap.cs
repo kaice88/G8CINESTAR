@@ -30,7 +30,7 @@ namespace MOVIE
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
-            string query = "Select * from account2 Where username = '" + username + "'and pwd = '" + password + "'";
+            string query = "Select * from TBStaff Where username = '" + username + "'and pwd = '" + password + "'";
             
             if (modify.accounts(query).Count != 0) // kiểm tra mk vs pwd
             {

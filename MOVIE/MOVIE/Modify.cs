@@ -23,7 +23,7 @@ namespace MOVIE
                 dataReader = sqlCommand.ExecuteReader();
                 while (dataReader.Read())
                 {
-                    accounts.Add(new account(dataReader.GetString(2), dataReader.GetString(3)));
+                    accounts.Add(new account(dataReader.GetString(1),dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(5), dataReader.GetBoolean(6)));
                 }
                 sqlConnection.Close();
             }
