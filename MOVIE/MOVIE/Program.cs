@@ -12,11 +12,17 @@ namespace MOVIE
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
         static void Main()
         {
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                SetProcessDPIAware();
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangKi());
+            Application.Run(new Form_QL_NV());
         }
     }
 }

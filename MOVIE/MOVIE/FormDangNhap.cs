@@ -17,6 +17,7 @@ namespace MOVIE
             InitializeComponent();
         }
         Modify modify = new Modify();
+        
 
         private void formfail(string mess, int x, int y, int z, int t) // hiện thông báo lỗi
         {
