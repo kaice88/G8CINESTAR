@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ac39c7bf-1b18-4ae0-bcb0-86bdc26f936d": {
+      "ProjectGuid": "ac39c7bf-1b18-4ae0-bcb0-86bdc26f936d",
+      "DisplayName": "BLL",
+      "ColorIndex": 0
+    },
+    "b9391726-4714-42c9-a3da-b427e4f82a41": {
+      "ProjectGuid": "b9391726-4714-42c9-a3da-b427e4f82a41",
+      "DisplayName": "DAL",
+      "ColorIndex": 1
+    },
+    "d2a162f4-0c13-4544-8f8e-10c03a050544": {
+      "ProjectGuid": "d2a162f4-0c13-4544-8f8e-10c03a050544",
+      "DisplayName": "DTO",
+      "ColorIndex": 2
+    },
+    "f00a1018-7d75-4c64-8808-a07ead644e23": {
+      "ProjectGuid": "f00a1018-7d75-4c64-8808-a07ead644e23",
+      "DisplayName": "GUI",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

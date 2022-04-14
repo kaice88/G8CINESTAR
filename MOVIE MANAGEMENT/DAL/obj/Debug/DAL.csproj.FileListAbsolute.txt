@@ -1,0 +1,27 @@
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\bin\Debug\DAL.dll
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\bin\Debug\DAL.pdb
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\bin\Debug\DTO.dll
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\bin\Debug\DTO.pdb
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.dll
+C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.pdb
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\bin\Debug\DAL.dll
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\bin\Debug\DAL.pdb
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\bin\Debug\DTO.dll
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\bin\Debug\DTO.pdb
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.dll
+C:\Users\PC\Downloads\MOVIE MANAGEMENT\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.pdb
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\bin\Debug\DAL.dll
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\bin\Debug\DAL.pdb
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\bin\Debug\DTO.dll
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\bin\Debug\DTO.pdb
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.dll
+C:\Users\LENOVO\Documents\HK4\PBL3\MOVIE MANAGEMENT\DAL\obj\Debug\DAL.pdb
