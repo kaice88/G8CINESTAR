@@ -229,6 +229,7 @@
     <Compile Include="MovieBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoomBLL.cs" />
+    <Compile Include="RoomTypeBLL.cs" />
     <Compile Include="SeatTypeBLL.cs" />
   </ItemGroup>
   <ItemGroup>

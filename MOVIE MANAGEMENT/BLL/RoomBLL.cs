@@ -21,10 +21,10 @@ namespace BLL
             }
             set { }
         }
-        public List<string> GetListRoom()
+        public List<string> GetListRoomType()
         {
             List<string> list = new List<string>();
-            DataTable dt = RoomDAL.Instance.GetListRoom();
+            DataTable dt = RoomDAL.Instance.GetListRoomType();
             foreach(DataRow dr in dt.Rows)
             {
                 list.Add(dr["room_type"].ToString());
@@ -43,6 +43,10 @@ namespace BLL
         public DataRow LoadRoomByID(int id)
         {
             return RoomDAL.Instance.LoadRoomByID(id);
+        }
+        public int GetRoomTypeIDByRomeType(string room_type)
+        {
+            return RoomDAL.Instance.GetRoomTypeIDByRomeType(room_type);
         }
         public string Add(Room room)
         {

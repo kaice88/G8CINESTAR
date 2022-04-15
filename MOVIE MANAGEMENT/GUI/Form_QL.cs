@@ -63,5 +63,11 @@ namespace GUI
             UC_SeatType uc = new UC_SeatType();
             AddUC(uc);
         }
+
+        private void btschedule_CheckedChanged(object sender, EventArgs e)
+        {
+            UC_RoomType uc = new UC_RoomType();
+            AddUC(uc);
+        }
     }
 }

@@ -18,23 +18,27 @@ namespace GUI
         {
             InitializeComponent();
             txtid.Enabled = false;
-            foreach(string i in RoomBLL.Instance.GetListRoom().Distinct())
+            ShowDGV();
+        }
+        public void LoadComboboxType()
+        {
+            cbtype.Items.Clear();
+            foreach (string i in RoomBLL.Instance.GetListRoomType().Distinct())
             {
                 cbtype.Items.Add(i.Trim());
             }
-            ShowDGV();
-            
         }
         public Room GetRoomInScreen(bool check = false) // false: update, true: add
         {
             Room room = new Room();
             if (check == false) room.ID = Convert.ToInt32(txtid.Text);
             room.Name = txtname.Text;
-            room.Type = cbtype.SelectedItem.ToString();
+            room.Room_Type_ID = RoomBLL.Instance.GetRoomTypeIDByRomeType(cbtype.SelectedItem.ToString());
             return room;
         }
         public void ShowDGV(string txt = "All")
         {
+            LoadComboboxType();
             if (txt == "All") dataGridView1.DataSource = RoomBLL.Instance.LoadAllRoom();
             else dataGridView1.DataSource = RoomBLL.Instance.LoadSearchRoom(txt);
         }
@@ -124,6 +128,13 @@ namespace GUI
             {
                 MessageBox.Show("Please choose a row to delete.");
             }
+        }
+
+        private void RoomTypeManagement_Click(object sender, EventArgs e)
+        {
+            FormRoomType f = new FormRoomType();
+            f.d = new FormRoomType.MyDel(ShowDGV);
+            f.Show();
         }
     }
 }

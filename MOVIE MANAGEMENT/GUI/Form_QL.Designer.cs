@@ -197,6 +197,7 @@
             this.btschedule.TabIndex = 51;
             this.btschedule.UseTransparentBackground = true;
             this.btschedule.UseWaitCursor = true;
+            this.btschedule.CheckedChanged += new System.EventHandler(this.btschedule_CheckedChanged);
             // 
             // btmovie
             // 

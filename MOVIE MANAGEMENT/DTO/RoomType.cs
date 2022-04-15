@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class Room
+    public class RoomType
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public int Room_Type_ID { get; set; }
+        public int Surcharge { get; set; }
     }
 }

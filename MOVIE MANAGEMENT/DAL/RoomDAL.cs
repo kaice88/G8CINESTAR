@@ -32,14 +32,19 @@ namespace DAL
             if (LoadData(query).Rows.Count != 0) return "Room's name is already registered!";
             return "OK";
         }
-        public DataTable GetListRoom()
+        public DataTable GetListRoomType()
         {
-            string query = "SELECT room_type FROM TBRoom";
+            string query = "SELECT room_type FROM TBRoomType";
             return LoadData(query);
+        }
+        public int GetRoomTypeIDByRomeType(string room_type)
+        {
+            string query = "SELECT room_type_id FROM TBRoomType WHERE room_type = '"+room_type + "'";
+            return Convert.ToInt32(LoadData(query).Rows[0][0].ToString());
         }
         public DataTable LoadAllRoom()
         {
-            string query = "SELECT * FROM TBRoom";
+            string query = "select room_id, room_name,TBRoomType.room_type from TBRoomType, TBRoom where TBRoomType.room_type_id = TBRoom.room_type_id";
             return LoadData(query);
         }
         public DataTable LoadSearchRoom(string txt)
@@ -47,18 +52,20 @@ namespace DAL
             string query;
             try
             {
-                query = "Select * from TBRoom where room_id = " + Convert.ToInt32(txt) + "or room_name = '" + txt + "' or room_type = '" + txt + "';";
+                query = "Select * from TBRoom where room_id = " + Convert.ToInt32(txt);
                 LoadData(query);
             }
             catch (Exception e)
             {
-                query = "Select * from TBRoom where room_name = '" + txt + "' or room_type = '" + txt + "';";
+                query = "select TBRoom.room_id, TBRoom.room_name, TBRoomType.room_type from TBRoom, TBRoomType " +
+                        "where (TBRoom.room_name like '%"+txt+"%'  or TBRoomType.room_type = '"+txt+"') and TBRoomType.room_type_id = TBRoom.room_type_id";
             }
             return LoadData(query);
         }
         public DataRow LoadRoomByID(int id)
         {
-            string query = "SELECT * FROM TBRoom WHERE room_id = " + id + ";";
+            string query = "select TBRoom.room_id, TBRoom.room_name, TBRoomType.room_type from TBRoom, TBRoomType"+
+                            " where TBRoom.room_id = "+id+" and TBRoomType.room_type_id = TBRoom.room_type_id";
             return LoadData(query).Rows[0];
         }
         public string Add(Room room)
@@ -67,7 +74,7 @@ namespace DAL
             if (check != "OK") return check;
 
             // add
-            string query = "Insert into TBRoom(room_name,room_type) values('"+ room.Name + "','" + room.Type + "')";
+            string query = "Insert into TBRoom(room_name,room_type_id) values('" + room.Name + "',"+ room.Room_Type_ID+")";
             EditData(query);
             return "OK";
         }
@@ -77,7 +84,7 @@ namespace DAL
             if (check != "OK") return check;
 
             // ud  
-            string query = "UPDATE TBRoom set room_name = '" + room.Name + "', room_type = '" + room.Type +"' where room_id = " + room.ID;
+            string query = "UPDATE TBRoom set room_name = '" + room.Name + "', room_type_id = " + room.Room_Type_ID + " where room_id = " + room.ID;
             EditData(query);
             return "OK";
         }

@@ -33,7 +33,7 @@ namespace DAL
 
             // add
             string query = "Insert into TBSeatType(seat_type,seat_price ) values('"
-                          + seattype.Name + "','" + seattype.Price + "')";
+                          + seattype.Name + "'," + seattype.Price + ")";
             EditData(query);
             return "OK";
         }

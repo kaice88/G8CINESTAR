@@ -9,16 +9,54 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DTO;
-
 namespace GUI
 {
-    public partial class UC_SeatType : UserControl
+    public partial class UC_RoomType : UserControl
     {
-        public UC_SeatType()
+        
+        public UC_RoomType()
         {
             InitializeComponent();
             txtid.Enabled = false;
             ShowDGV();
+        }
+        public RoomType GetRoomTypeInScreen(bool check = false) // false: update, true: add
+        {
+            RoomType roomtype = new RoomType();
+            if (check == false) roomtype.ID = Convert.ToInt32(txtid.Text.ToString());
+            roomtype.Name = txtroomtype.Text;
+            roomtype.Surcharge = Convert.ToInt32(txtsurcharge.Text.ToString());
+            return roomtype;
+        }
+        public void ShowDGV(string txt = "All")
+        {
+            if (txt == "All") dataGridView1.DataSource = RoomTypeBLL.Instance.LoadAllRoomType();
+            else dataGridView1.DataSource = RoomTypeBLL.Instance.LoadSearchRoomType(txt);
+        }
+        private void buttonReset_Click(object sender, EventArgs e)
+        {
+            txtid.Text = "";
+            txtroomtype.Text = "";
+            txtsurcharge.Text = "";
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                if (dataGridView1.CurrentRow.Cells[0].Value.ToString() != "")
+                {
+                    DataRow row = RoomTypeBLL.Instance.LoadRoomTypeByID(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString()));
+
+                    txtid.Text = row[0].ToString().Trim();
+                    txtroomtype.Text = row[1].ToString().Trim();
+                    txtsurcharge.Text = row[2].ToString().Trim();
+                }
+            }
+        }
+        private void butSearch_Click(object sender, EventArgs e)
+        {
+            ShowDGV(txtSearch.Text);
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -26,8 +64,8 @@ namespace GUI
             string add;
             try
             {
-                Convert.ToInt32(txtprice.Text.ToString());
-                add = SeatTypeBLL.Instance.Add(GetSeatTypeInScreen(true));
+                Convert.ToInt32(txtsurcharge.Text.ToString());
+                add = RoomTypeBLL.Instance.Add(GetRoomTypeInScreen(true));
             }
             catch (Exception ex)
             {
@@ -44,6 +82,7 @@ namespace GUI
                     break;
             }
         }
+
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
@@ -51,14 +90,14 @@ namespace GUI
                 string update;
                 try
                 {
-                    Convert.ToInt32(txtprice.Text.ToString());
-                    update = SeatTypeBLL.Instance.Update(GetSeatTypeInScreen());
+                    Convert.ToInt32(txtsurcharge.Text.ToString());
+                    update = RoomTypeBLL.Instance.Update(GetRoomTypeInScreen());
                 }
                 catch (Exception ex)
                 {
                     update = "Invalid Price!";
                 }
-                
+
                 switch (update)
                 {
                     case "OK":
@@ -75,19 +114,6 @@ namespace GUI
                 MessageBox.Show("Please choose a row to update.");
             }
         }
-        public SeatType GetSeatTypeInScreen(bool check = false) // false: update, true: add
-        {
-            SeatType seattype = new SeatType();
-            if (check == false) seattype.ID = Convert.ToInt32(txtid.Text.ToString());
-            seattype.Name = txtseattype.Text;
-            seattype.Price = Convert.ToInt32(txtprice.Text.ToString());
-            return seattype;
-        }
-        public void ShowDGV(string txt = "All")
-        {
-            if (txt == "All") dataGridView1.DataSource = SeatTypeBLL.Instance.LoadAllSeatType();
-            else dataGridView1.DataSource = SeatTypeBLL.Instance.LoadSearchSeatType(txt);
-        }
 
         private void gunaDelete_Click(object sender, EventArgs e)
         {
@@ -101,7 +127,7 @@ namespace GUI
                     {
                         id.Add(Convert.ToInt32(row.Cells[0].Value.ToString()));
                     }
-                    SeatTypeBLL.Instance.Delete(id);
+                    RoomTypeBLL.Instance.Delete(id);
                     ShowDGV();
                 }
             }
@@ -110,35 +136,5 @@ namespace GUI
                 MessageBox.Show("Please choose a row to delete.");
             }
         }
-
-        private void butSearch_Click(object sender, EventArgs e)
-        {
-            ShowDGV(txtSearch.Text);
-        }
-
-        private void buttonReset_Click(object sender, EventArgs e)
-        {
-            txtid.Text = "";
-            txtseattype.Text = "";
-            txtprice.Text = "";
-        }
-
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count == 1)
-            {
-
-                if (dataGridView1.CurrentRow.Cells[0].Value.ToString() != "")
-                {
-                    DataRow row = SeatTypeBLL.Instance.LoadSeatTypeByID(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString()));
-
-                    txtid.Text = row[0].ToString().Trim();
-                    txtseattype.Text = row[1].ToString().Trim();
-                    txtprice.Text = row[2].ToString().Trim();
-                }
-            }
-        }
     }
 }
-
-

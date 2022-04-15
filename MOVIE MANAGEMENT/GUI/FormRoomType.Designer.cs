@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class UC_SeatType
+    partial class FormRoomType
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SeatType));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRoomType));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaDelete = new Guna.UI2.WinForms.Guna2Button();
             this.buttonUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.buttonAdd = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.txtid = new Guna.UI2.WinForms.Guna2TextBox();
             this.buttonReset = new Guna.UI2.WinForms.Guna2Button();
-            this.txtprice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtseattype = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtsurcharge = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtroomtype = new Guna.UI2.WinForms.Guna2TextBox();
             this.butSearch = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.room_type_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.room_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.room_type_surcharge = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.seat_type_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.seat_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.seat_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -115,8 +115,8 @@
             this.panel2.BorderThickness = 2;
             this.panel2.Controls.Add(this.txtid);
             this.panel2.Controls.Add(this.buttonReset);
-            this.panel2.Controls.Add(this.txtprice);
-            this.panel2.Controls.Add(this.txtseattype);
+            this.panel2.Controls.Add(this.txtsurcharge);
+            this.panel2.Controls.Add(this.txtroomtype);
             this.panel2.Location = new System.Drawing.Point(56, 94);
             this.panel2.Name = "panel2";
             this.panel2.ShadowDecoration.BorderRadius = 10;
@@ -167,53 +167,53 @@
             this.buttonReset.TabIndex = 85;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
-            // txtprice
+            // txtsurcharge
             // 
-            this.txtprice.BackColor = System.Drawing.Color.Transparent;
-            this.txtprice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.txtprice.BorderRadius = 10;
-            this.txtprice.BorderThickness = 2;
-            this.txtprice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtprice.DefaultText = "";
-            this.txtprice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtprice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtprice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtprice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtprice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtprice.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
-            this.txtprice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtprice.Location = new System.Drawing.Point(415, 56);
-            this.txtprice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtprice.Name = "txtprice";
-            this.txtprice.PasswordChar = '\0';
-            this.txtprice.PlaceholderText = "Price";
-            this.txtprice.SelectedText = "";
-            this.txtprice.Size = new System.Drawing.Size(195, 36);
-            this.txtprice.TabIndex = 55;
+            this.txtsurcharge.BackColor = System.Drawing.Color.Transparent;
+            this.txtsurcharge.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.txtsurcharge.BorderRadius = 10;
+            this.txtsurcharge.BorderThickness = 2;
+            this.txtsurcharge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtsurcharge.DefaultText = "";
+            this.txtsurcharge.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtsurcharge.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtsurcharge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtsurcharge.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtsurcharge.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtsurcharge.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
+            this.txtsurcharge.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtsurcharge.Location = new System.Drawing.Point(415, 56);
+            this.txtsurcharge.Margin = new System.Windows.Forms.Padding(2);
+            this.txtsurcharge.Name = "txtsurcharge";
+            this.txtsurcharge.PasswordChar = '\0';
+            this.txtsurcharge.PlaceholderText = "Surcharge";
+            this.txtsurcharge.SelectedText = "";
+            this.txtsurcharge.Size = new System.Drawing.Size(195, 36);
+            this.txtsurcharge.TabIndex = 55;
             // 
-            // txtseattype
+            // txtroomtype
             // 
-            this.txtseattype.BackColor = System.Drawing.Color.Transparent;
-            this.txtseattype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.txtseattype.BorderRadius = 10;
-            this.txtseattype.BorderThickness = 2;
-            this.txtseattype.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtseattype.DefaultText = "";
-            this.txtseattype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtseattype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtseattype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtseattype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtseattype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtseattype.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
-            this.txtseattype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtseattype.Location = new System.Drawing.Point(182, 56);
-            this.txtseattype.Margin = new System.Windows.Forms.Padding(2);
-            this.txtseattype.Name = "txtseattype";
-            this.txtseattype.PasswordChar = '\0';
-            this.txtseattype.PlaceholderText = "Seat Type";
-            this.txtseattype.SelectedText = "";
-            this.txtseattype.Size = new System.Drawing.Size(195, 36);
-            this.txtseattype.TabIndex = 53;
+            this.txtroomtype.BackColor = System.Drawing.Color.Transparent;
+            this.txtroomtype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.txtroomtype.BorderRadius = 10;
+            this.txtroomtype.BorderThickness = 2;
+            this.txtroomtype.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtroomtype.DefaultText = "";
+            this.txtroomtype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtroomtype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtroomtype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtroomtype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtroomtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtroomtype.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
+            this.txtroomtype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtroomtype.Location = new System.Drawing.Point(182, 56);
+            this.txtroomtype.Margin = new System.Windows.Forms.Padding(2);
+            this.txtroomtype.Name = "txtroomtype";
+            this.txtroomtype.PasswordChar = '\0';
+            this.txtroomtype.PlaceholderText = "Room Type";
+            this.txtroomtype.SelectedText = "";
+            this.txtroomtype.Size = new System.Drawing.Size(195, 36);
+            this.txtroomtype.TabIndex = 53;
             // 
             // butSearch
             // 
@@ -234,57 +234,57 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.ColumnHeadersHeight = 55;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.seat_type_id,
-            this.seat_type,
-            this.seat_price});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.room_type_id,
+            this.room_type,
+            this.room_type_surcharge});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.dataGridView1.Location = new System.Drawing.Point(56, 272);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(698, 226);
+            this.dataGridView1.Size = new System.Drawing.Size(818, 226);
             this.dataGridView1.TabIndex = 91;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -310,6 +310,33 @@
             this.dataGridView1.UseWaitCursor = true;
             this.dataGridView1.VirtualMode = true;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // room_type_id
+            // 
+            this.room_type_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.room_type_id.DataPropertyName = "room_type_id";
+            this.room_type_id.HeaderText = "ID";
+            this.room_type_id.MinimumWidth = 6;
+            this.room_type_id.Name = "room_type_id";
+            this.room_type_id.Width = 111;
+            // 
+            // room_type
+            // 
+            this.room_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.room_type.DataPropertyName = "room_type";
+            this.room_type.HeaderText = "Room Type";
+            this.room_type.MinimumWidth = 6;
+            this.room_type.Name = "room_type";
+            this.room_type.Width = 350;
+            // 
+            // room_type_surcharge
+            // 
+            this.room_type_surcharge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.room_type_surcharge.DataPropertyName = "room_type_surcharge";
+            this.room_type_surcharge.HeaderText = "Surcharge";
+            this.room_type_surcharge.MinimumWidth = 6;
+            this.room_type_surcharge.Name = "room_type_surcharge";
+            this.room_type_surcharge.Width = 350;
             // 
             // txtSearch
             // 
@@ -342,41 +369,15 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.label2.Location = new System.Drawing.Point(41, -9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(346, 69);
+            this.label2.Size = new System.Drawing.Size(382, 69);
             this.label2.TabIndex = 97;
-            this.label2.Text = "Seat Type !";
+            this.label2.Text = "Room Type !";
             // 
-            // seat_type_id
-            // 
-            this.seat_type_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.seat_type_id.DataPropertyName = "seat_type_id";
-            this.seat_type_id.HeaderText = "ID";
-            this.seat_type_id.MinimumWidth = 6;
-            this.seat_type_id.Name = "seat_type_id";
-            this.seat_type_id.Width = 118;
-            // 
-            // seat_type
-            // 
-            this.seat_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.seat_type.DataPropertyName = "seat_type";
-            this.seat_type.HeaderText = "Seat Type";
-            this.seat_type.MinimumWidth = 6;
-            this.seat_type.Name = "seat_type";
-            this.seat_type.Width = 320;
-            // 
-            // seat_price
-            // 
-            this.seat_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.seat_price.DataPropertyName = "seat_price";
-            this.seat_price.HeaderText = "Price";
-            this.seat_price.MinimumWidth = 6;
-            this.seat_price.Name = "seat_price";
-            this.seat_price.Width = 320;
-            // 
-            // UC_SeatType
+            // FormRoomType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(899, 477);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.gunaDelete);
             this.Controls.Add(this.buttonUpdate);
@@ -385,8 +386,8 @@
             this.Controls.Add(this.butSearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtSearch);
-            this.Name = "UC_SeatType";
-            this.Size = new System.Drawing.Size(915, 516);
+            this.Name = "FormRoomType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -401,15 +402,15 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel panel2;
         private Guna.UI2.WinForms.Guna2TextBox txtid;
         private Guna.UI2.WinForms.Guna2Button buttonReset;
-        private Guna.UI2.WinForms.Guna2TextBox txtprice;
-        private Guna.UI2.WinForms.Guna2TextBox txtseattype;
+        private Guna.UI2.WinForms.Guna2TextBox txtsurcharge;
+        private Guna.UI2.WinForms.Guna2TextBox txtroomtype;
         private Guna.UI2.WinForms.Guna2Button butSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn seat_type_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn seat_type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn seat_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn room_type_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn room_type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn room_type_surcharge;
     }
 }
 
