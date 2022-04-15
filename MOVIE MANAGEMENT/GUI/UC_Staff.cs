@@ -115,23 +115,22 @@ namespace GUI
         {
             List<int> id = new List<int>();
             if (dataGridView1.SelectedRows.Count > 0)
-            {   
-                foreach(DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                DialogResult dr = MessageBox.Show("Are you sure you want to delete?", "NOTIFICATION", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
                 {
-                    id.Add(Convert.ToInt32(row.Cells[0].Value.ToString()));
+                    foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                    {
+                        id.Add(Convert.ToInt32(row.Cells[0].Value.ToString()));
+                    }
+                    AccountBLL.Instance.Delete(id);
+                    ShowDGV();
                 }
-                AccountBLL.Instance.Delete(id);
-                ShowDGV();
             }
             else
             {
                 MessageBox.Show("Please choose a row to delete.");
             }
-        }
-
-        private void UC_Staff_Load(object sender, EventArgs e)
-        {
-          
         }
     }
 }

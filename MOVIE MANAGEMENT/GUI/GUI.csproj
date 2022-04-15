@@ -93,6 +93,18 @@
     <Compile Include="UC_Movie.Designer.cs">
       <DependentUpon>UC_Movie.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Room.Designer.cs">
+      <DependentUpon>UC_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SeatType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SeatType.Designer.cs">
+      <DependentUpon>UC_SeatType.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Staff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +137,12 @@
     </Compile>
     <EmbeddedResource Include="UC_Movie.resx">
       <DependentUpon>UC_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Room.resx">
+      <DependentUpon>UC_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SeatType.resx">
+      <DependentUpon>UC_SeatType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Staff.resx">
       <DependentUpon>UC_Staff.cs</DependentUpon>

@@ -124,7 +124,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABAkAAAI/CAYAAAAV9IALAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAISJJREFUeF7t3fmXnuV93/H+Z/2hpwk1eMFtjuu0aZ2kTYiMjMHGJsFuHMcYUstI
+        vwAADr8BOAVTJAAAISJJREFUeF7t3fmXnuV93/H+Z/2hpwk1eMFtjuu0aZ2kTYiMjMHGJsFuHMcYUstI
         7BgDNkEYQUEsttgFtlZAaGFGM6N1pNkkzWgdJI00oxndjbBJWL4azfLc13Xdz/N6nfP+I76fcy//rgIA
         AKAt9fYfqv79X94hzTkjAQAAQBt7eUNXeAxKUUYCAACANnfvqjfCg1D6dEYCAACADnDTslXhUSh9PCMB
         AABABzg9ca766i0PhIeh9FFGAgAAgA4xcPh4ddWSn4bHoXQpIwEAAEAH2dp3MDwOpUsZCQAAADrMW1t6
@@ -535,7 +535,7 @@
         JEmSJEmSJEmSlHNbtvx/Wcypkpz8URoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btroom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gMfDQIQZEqOkwAAFX5JREFU
@@ -766,7 +766,7 @@
         HgDz5wHAcYh5Ne3Mmf8LY9m8bsU4RMUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btticket.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gMfDDgb1/PjVQAAGjVJREFU
@@ -1131,7 +1131,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btseat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gMfDQQpbRWhHQAALilJREFU
@@ -1857,7 +1857,7 @@
         AhkAABDIAACAQAYAAAQyAAAgzvbV/wVhyOdcCD7yDwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btschedule.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gMfDDkv71wmoQAAEy5JREFU

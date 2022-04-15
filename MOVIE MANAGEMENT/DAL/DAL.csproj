@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="AccountDAL.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="MovieDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomDAL.cs" />
+    <Compile Include="SeatTypeDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

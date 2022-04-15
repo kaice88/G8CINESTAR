@@ -33,11 +33,11 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2NotificationPaint1 = new Guna.UI2.WinForms.Guna2NotificationPaint(this.components);
             this.paneltrans = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btroom = new Guna.UI2.WinForms.Guna2Button();
+            this.btticket = new Guna.UI2.WinForms.Guna2Button();
+            this.btseat = new Guna.UI2.WinForms.Guna2Button();
             this.btstaff = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btschedule = new Guna.UI2.WinForms.Guna2Button();
             this.btmovie = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -60,86 +60,88 @@
             this.paneltrans.Size = new System.Drawing.Size(882, 516);
             this.paneltrans.TabIndex = 56;
             // 
-            // guna2Button5
+            // btroom
             // 
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button5.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button5.CheckedState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button5.Location = new System.Drawing.Point(42, 200);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(56, 34);
-            this.guna2Button5.TabIndex = 55;
-            this.guna2Button5.UseTransparentBackground = true;
-            this.guna2Button5.UseWaitCursor = true;
+            this.btroom.BackColor = System.Drawing.Color.Transparent;
+            this.btroom.BorderRadius = 10;
+            this.btroom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btroom.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btroom.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.btroom.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btroom.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btroom.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btroom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btroom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btroom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btroom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btroom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btroom.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btroom.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
+            this.btroom.ForeColor = System.Drawing.Color.White;
+            this.btroom.Image = ((System.Drawing.Image)(resources.GetObject("btroom.Image")));
+            this.btroom.ImageSize = new System.Drawing.Size(25, 25);
+            this.btroom.Location = new System.Drawing.Point(42, 200);
+            this.btroom.Name = "btroom";
+            this.btroom.Size = new System.Drawing.Size(56, 34);
+            this.btroom.TabIndex = 55;
+            this.btroom.UseTransparentBackground = true;
+            this.btroom.UseWaitCursor = true;
+            this.btroom.CheckedChanged += new System.EventHandler(this.btroom_CheckedChanged);
             // 
-            // guna2Button4
+            // btticket
             // 
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button4.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button4.CheckedState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button4.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button4.Location = new System.Drawing.Point(42, 300);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(56, 34);
-            this.guna2Button4.TabIndex = 54;
-            this.guna2Button4.UseTransparentBackground = true;
-            this.guna2Button4.UseWaitCursor = true;
+            this.btticket.BackColor = System.Drawing.Color.Transparent;
+            this.btticket.BorderRadius = 10;
+            this.btticket.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btticket.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btticket.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.btticket.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btticket.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btticket.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btticket.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btticket.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btticket.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btticket.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btticket.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btticket.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btticket.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
+            this.btticket.ForeColor = System.Drawing.Color.White;
+            this.btticket.Image = ((System.Drawing.Image)(resources.GetObject("btticket.Image")));
+            this.btticket.ImageSize = new System.Drawing.Size(25, 25);
+            this.btticket.Location = new System.Drawing.Point(42, 300);
+            this.btticket.Name = "btticket";
+            this.btticket.Size = new System.Drawing.Size(56, 34);
+            this.btticket.TabIndex = 54;
+            this.btticket.UseTransparentBackground = true;
+            this.btticket.UseWaitCursor = true;
             // 
-            // guna2Button3
+            // btseat
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button3.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button3.Location = new System.Drawing.Point(42, 250);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(56, 34);
-            this.guna2Button3.TabIndex = 53;
-            this.guna2Button3.UseTransparentBackground = true;
-            this.guna2Button3.UseWaitCursor = true;
+            this.btseat.BackColor = System.Drawing.Color.Transparent;
+            this.btseat.BorderRadius = 10;
+            this.btseat.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btseat.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btseat.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.btseat.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btseat.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btseat.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btseat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btseat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btseat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btseat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btseat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btseat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btseat.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
+            this.btseat.ForeColor = System.Drawing.Color.White;
+            this.btseat.Image = ((System.Drawing.Image)(resources.GetObject("btseat.Image")));
+            this.btseat.ImageSize = new System.Drawing.Size(25, 25);
+            this.btseat.Location = new System.Drawing.Point(42, 250);
+            this.btseat.Name = "btseat";
+            this.btseat.Size = new System.Drawing.Size(56, 34);
+            this.btseat.TabIndex = 53;
+            this.btseat.UseTransparentBackground = true;
+            this.btseat.UseWaitCursor = true;
+            this.btseat.CheckedChanged += new System.EventHandler(this.btseat_CheckedChanged);
             // 
             // btstaff
             // 
@@ -169,32 +171,32 @@
             this.btstaff.UseWaitCursor = true;
             this.btstaff.CheckedChanged += new System.EventHandler(this.btstaff_CheckedChanged);
             // 
-            // guna2Button1
+            // btschedule
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.CheckedState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.guna2Button1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button1.Location = new System.Drawing.Point(42, 150);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(56, 34);
-            this.guna2Button1.TabIndex = 51;
-            this.guna2Button1.UseTransparentBackground = true;
-            this.guna2Button1.UseWaitCursor = true;
+            this.btschedule.BackColor = System.Drawing.Color.Transparent;
+            this.btschedule.BorderRadius = 10;
+            this.btschedule.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btschedule.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btschedule.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.btschedule.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btschedule.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btschedule.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btschedule.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btschedule.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btschedule.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btschedule.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btschedule.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btschedule.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btschedule.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
+            this.btschedule.ForeColor = System.Drawing.Color.White;
+            this.btschedule.Image = ((System.Drawing.Image)(resources.GetObject("btschedule.Image")));
+            this.btschedule.ImageSize = new System.Drawing.Size(25, 25);
+            this.btschedule.Location = new System.Drawing.Point(42, 150);
+            this.btschedule.Name = "btschedule";
+            this.btschedule.Size = new System.Drawing.Size(56, 34);
+            this.btschedule.TabIndex = 51;
+            this.btschedule.UseTransparentBackground = true;
+            this.btschedule.UseWaitCursor = true;
             // 
             // btmovie
             // 
@@ -267,11 +269,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1033, 575);
             this.Controls.Add(this.buttonexit);
-            this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.btroom);
+            this.Controls.Add(this.btticket);
+            this.Controls.Add(this.btseat);
             this.Controls.Add(this.btstaff);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btschedule);
             this.Controls.Add(this.btmovie);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.paneltrans);
@@ -292,11 +294,11 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button btmovie;
         private Guna.UI2.WinForms.Guna2NotificationPaint guna2NotificationPaint1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btseat;
         private Guna.UI2.WinForms.Guna2Button btstaff;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btschedule;
+        private Guna.UI2.WinForms.Guna2Button btroom;
+        private Guna.UI2.WinForms.Guna2Button btticket;
         private Guna.UI2.WinForms.Guna2Panel paneltrans;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Button buttonexit;

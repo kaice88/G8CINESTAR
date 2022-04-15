@@ -33,16 +33,16 @@ namespace DAL
             string query = "Select email from TBStaff where email = '" + account.Email + "'";
             if (LoadData(query).Rows.Count != 0) return "Email address is already registered!";
             query = "Select username from TBStaff where username = '" + account.Username + "'";
-            if (LoadData(query).Rows.Count != 0) return "USERNAME TRUNG";
+            if (LoadData(query).Rows.Count != 0) return "Username is already being used!";
             return "OK";
         }
         public string CheckUpdate(Account account) {
             string query = "Select email from TBStaff where email = '" + account.Email + "' and id_number != " + account.ID;
             if (LoadData(query).Rows.Count != 0) return "Email address is already registered!";
             query = "Select username from TBStaff where username = '" + account.Username + "' and id_number != " + account.ID;
-            if (LoadData(query).Rows.Count != 0) return "USERNAME TRUNG";
+            if (LoadData(query).Rows.Count != 0) return "Username is already being used!";
             query = "Select pwd from TBStaff where email = '" + account.Email + "';";
-            if (LoadData(query).Rows[0][0].ToString().Trim() == account.Username) return "Username không được trùng với Password";
+            if (LoadData(query).Rows[0][0].ToString().Trim() == account.Username) return "Password not be same with username.";
             return "OK";
         }
         public string Add(Account account)
@@ -68,7 +68,7 @@ namespace DAL
             if (check != "OK") return check;
 
             // ud  
-            string query = "UPDATE TBstaff set fullname = '" + account.Fullname + "', username = '" + account.Username + 
+            string query = "UPDATE TBStaff set fullname = '" + account.Fullname + "', username = '" + account.Username + 
               "', phone_number = '" + account.Phone + "', email = '" + account.Email + "', role = '" + account.Role+ "' where id_number = " + account.ID;
             EditData(query);
             return "OK";

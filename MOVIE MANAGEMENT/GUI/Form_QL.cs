@@ -30,6 +30,7 @@ namespace GUI
             UC_Movie uc = new UC_Movie();
             AddUC(uc);
         }
+
         private void btstaff_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -49,6 +50,18 @@ namespace GUI
             FormDangNhap f = new FormDangNhap();
             Hide();
             f.Show();
+        }
+
+        private void btroom_CheckedChanged(object sender, EventArgs e)
+        {
+            UC_Room uc = new UC_Room();
+            AddUC(uc);
+        }
+
+        private void btseat_CheckedChanged(object sender, EventArgs e)
+        {
+            UC_SeatType uc = new UC_SeatType();
+            AddUC(uc);
         }
     }
 }
