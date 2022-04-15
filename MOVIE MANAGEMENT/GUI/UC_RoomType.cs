@@ -13,7 +13,6 @@ namespace GUI
 {
     public partial class UC_RoomType : UserControl
     {
-        
         public UC_RoomType()
         {
             InitializeComponent();
@@ -81,6 +80,7 @@ namespace GUI
                     MessageBox.Show(add);
                     break;
             }
+            
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -113,6 +113,7 @@ namespace GUI
             {
                 MessageBox.Show("Please choose a row to update.");
             }
+            
         }
 
         private void gunaDelete_Click(object sender, EventArgs e)
@@ -135,6 +136,7 @@ namespace GUI
             {
                 MessageBox.Show("Please choose a row to delete.");
             }
+            
         }
     }
 }

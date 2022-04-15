@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Movie));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaDelete = new Guna.UI2.WinForms.Guna2Button();
             this.buttonUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.buttonAdd = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.txtdescription = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dtrelease = new System.Windows.Forms.DateTimePicker();
             this.txtid = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtlength = new Guna.UI2.WinForms.Guna2TextBox();
             this.buttonReset = new Guna.UI2.WinForms.Guna2Button();
@@ -55,6 +55,7 @@
             this.movie_length = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movie_release = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.dtrelease = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,10 +65,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.label1.Location = new System.Drawing.Point(55, -2);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(41, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 85);
+            this.label1.Size = new System.Drawing.Size(229, 69);
             this.label1.TabIndex = 89;
             this.label1.Text = "Movie !";
             // 
@@ -82,10 +82,9 @@
             this.gunaDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.gunaDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.gunaDelete.ForeColor = System.Drawing.Color.White;
-            this.gunaDelete.Location = new System.Drawing.Point(1020, 252);
-            this.gunaDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaDelete.Location = new System.Drawing.Point(765, 205);
             this.gunaDelete.Name = "gunaDelete";
-            this.gunaDelete.Size = new System.Drawing.Size(145, 43);
+            this.gunaDelete.Size = new System.Drawing.Size(109, 35);
             this.gunaDelete.TabIndex = 95;
             this.gunaDelete.Text = "Delete";
             this.gunaDelete.Click += new System.EventHandler(this.gunaDelete_Click);
@@ -101,10 +100,9 @@
             this.buttonUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.buttonUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(1020, 114);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUpdate.Location = new System.Drawing.Point(765, 93);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(145, 43);
+            this.buttonUpdate.Size = new System.Drawing.Size(109, 35);
             this.buttonUpdate.TabIndex = 93;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -120,10 +118,9 @@
             this.buttonAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.buttonAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(1020, 185);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAdd.Location = new System.Drawing.Point(765, 150);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(145, 43);
+            this.buttonAdd.Size = new System.Drawing.Size(109, 35);
             this.buttonAdd.TabIndex = 92;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -135,18 +132,17 @@
             this.panel2.BorderRadius = 10;
             this.panel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.panel2.BorderThickness = 2;
-            this.panel2.Controls.Add(this.txtdescription);
             this.panel2.Controls.Add(this.dtrelease);
+            this.panel2.Controls.Add(this.txtdescription);
             this.panel2.Controls.Add(this.txtid);
             this.panel2.Controls.Add(this.txtlength);
             this.panel2.Controls.Add(this.buttonReset);
             this.panel2.Controls.Add(this.txtgenres);
             this.panel2.Controls.Add(this.txtname);
-            this.panel2.Location = new System.Drawing.Point(75, 114);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(56, 93);
             this.panel2.Name = "panel2";
             this.panel2.ShadowDecoration.BorderRadius = 10;
-            this.panel2.Size = new System.Drawing.Size(931, 183);
+            this.panel2.Size = new System.Drawing.Size(698, 149);
             this.panel2.TabIndex = 94;
             // 
             // txtdescription
@@ -164,21 +160,14 @@
             this.txtdescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdescription.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
             this.txtdescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtdescription.Location = new System.Drawing.Point(15, 105);
-            this.txtdescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtdescription.Location = new System.Drawing.Point(11, 85);
+            this.txtdescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdescription.Name = "txtdescription";
             this.txtdescription.PasswordChar = '\0';
             this.txtdescription.PlaceholderText = "Movie description";
             this.txtdescription.SelectedText = "";
-            this.txtdescription.Size = new System.Drawing.Size(260, 44);
+            this.txtdescription.Size = new System.Drawing.Size(195, 36);
             this.txtdescription.TabIndex = 87;
-            // 
-            // dtrelease
-            // 
-            this.dtrelease.Location = new System.Drawing.Point(559, 116);
-            this.dtrelease.Name = "dtrelease";
-            this.dtrelease.Size = new System.Drawing.Size(260, 22);
-            this.dtrelease.TabIndex = 86;
             // 
             // txtid
             // 
@@ -195,13 +184,13 @@
             this.txtid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtid.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
             this.txtid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtid.Location = new System.Drawing.Point(29, 33);
-            this.txtid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtid.Location = new System.Drawing.Point(13, 27);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtid.Name = "txtid";
             this.txtid.PasswordChar = '\0';
             this.txtid.PlaceholderText = "ID";
             this.txtid.SelectedText = "";
-            this.txtid.Size = new System.Drawing.Size(148, 44);
+            this.txtid.Size = new System.Drawing.Size(111, 36);
             this.txtid.TabIndex = 57;
             // 
             // txtlength
@@ -219,13 +208,13 @@
             this.txtlength.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtlength.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
             this.txtlength.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtlength.Location = new System.Drawing.Point(293, 105);
-            this.txtlength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtlength.Location = new System.Drawing.Point(217, 85);
+            this.txtlength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtlength.Name = "txtlength";
             this.txtlength.PasswordChar = '\0';
             this.txtlength.PlaceholderText = "Movie length";
             this.txtlength.SelectedText = "";
-            this.txtlength.Size = new System.Drawing.Size(260, 44);
+            this.txtlength.Size = new System.Drawing.Size(195, 36);
             this.txtlength.TabIndex = 56;
             // 
             // buttonReset
@@ -240,11 +229,11 @@
             this.buttonReset.FillColor = System.Drawing.Color.Transparent;
             this.buttonReset.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.buttonReset.ForeColor = System.Drawing.Color.White;
+            this.buttonReset.Image = ((System.Drawing.Image)(resources.GetObject("buttonReset.Image")));
             this.buttonReset.ImageSize = new System.Drawing.Size(25, 25);
-            this.buttonReset.Location = new System.Drawing.Point(859, 34);
-            this.buttonReset.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReset.Location = new System.Drawing.Point(644, 28);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(43, 43);
+            this.buttonReset.Size = new System.Drawing.Size(32, 35);
             this.buttonReset.TabIndex = 85;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
@@ -263,13 +252,13 @@
             this.txtgenres.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtgenres.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
             this.txtgenres.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtgenres.Location = new System.Drawing.Point(559, 33);
-            this.txtgenres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtgenres.Location = new System.Drawing.Point(431, 27);
+            this.txtgenres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtgenres.Name = "txtgenres";
             this.txtgenres.PasswordChar = '\0';
             this.txtgenres.PlaceholderText = "Movie genres";
             this.txtgenres.SelectedText = "";
-            this.txtgenres.Size = new System.Drawing.Size(260, 44);
+            this.txtgenres.Size = new System.Drawing.Size(201, 36);
             this.txtgenres.TabIndex = 55;
             // 
             // txtname
@@ -287,13 +276,13 @@
             this.txtname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtname.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
             this.txtname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtname.Location = new System.Drawing.Point(247, 33);
-            this.txtname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtname.Location = new System.Drawing.Point(217, 27);
+            this.txtname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtname.Name = "txtname";
             this.txtname.PasswordChar = '\0';
             this.txtname.PlaceholderText = "Movie name";
             this.txtname.SelectedText = "";
-            this.txtname.Size = new System.Drawing.Size(260, 44);
+            this.txtname.Size = new System.Drawing.Size(195, 36);
             this.txtname.TabIndex = 53;
             // 
             // butSearch
@@ -306,10 +295,9 @@
             this.butSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.butSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.butSearch.ForeColor = System.Drawing.Color.White;
-            this.butSearch.Location = new System.Drawing.Point(1020, 39);
-            this.butSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.butSearch.Location = new System.Drawing.Point(765, 32);
             this.butSearch.Name = "butSearch";
-            this.butSearch.Size = new System.Drawing.Size(145, 43);
+            this.butSearch.Size = new System.Drawing.Size(109, 35);
             this.butSearch.TabIndex = 91;
             this.butSearch.Text = "Search";
             this.butSearch.Click += new System.EventHandler(this.butSearch_Click);
@@ -328,36 +316,37 @@
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(649, 39);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearch.IconLeft")));
+            this.txtSearch.Location = new System.Drawing.Point(487, 32);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(356, 44);
+            this.txtSearch.Size = new System.Drawing.Size(267, 36);
             this.txtSearch.TabIndex = 90;
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeight = 55;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.movie_id,
@@ -366,33 +355,33 @@
             this.movie_description,
             this.movie_length,
             this.movie_release});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.dataGridView1.Location = new System.Drawing.Point(75, 335);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 272);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 50;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1081, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(811, 244);
             this.dataGridView1.TabIndex = 96;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -478,9 +467,26 @@
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // dtrelease
+            // 
+            this.dtrelease.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.dtrelease.BorderRadius = 10;
+            this.dtrelease.Checked = true;
+            this.dtrelease.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.dtrelease.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtrelease.ForeColor = System.Drawing.Color.White;
+            this.dtrelease.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtrelease.Location = new System.Drawing.Point(432, 85);
+            this.dtrelease.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtrelease.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtrelease.Name = "dtrelease";
+            this.dtrelease.Size = new System.Drawing.Size(200, 36);
+            this.dtrelease.TabIndex = 88;
+            this.dtrelease.Value = new System.DateTime(2022, 4, 15, 19, 48, 26, 660);
+            // 
             // UC_Movie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.dataGridView1);
@@ -491,9 +497,8 @@
             this.Controls.Add(this.butSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Movie";
-            this.Size = new System.Drawing.Size(1220, 635);
+            this.Size = new System.Drawing.Size(915, 516);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -516,7 +521,6 @@
         private Guna.UI2.WinForms.Guna2Button butSearch;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dtrelease;
         private System.Windows.Forms.DataGridViewTextBoxColumn movie_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn movie_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn movie_genres;
@@ -525,5 +529,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn movie_release;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox txtdescription;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtrelease;
     }
 }

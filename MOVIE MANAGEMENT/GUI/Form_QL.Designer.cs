@@ -42,6 +42,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.buttonexit = new Guna.UI2.WinForms.Guna2Button();
+            this.btroomtype = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             this.btroom.CheckedState.CustomBorderColor = System.Drawing.Color.White;
             this.btroom.CheckedState.FillColor = System.Drawing.Color.White;
             this.btroom.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.btroom.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btroom.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btroom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btroom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btroom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -97,7 +98,7 @@
             this.btticket.CheckedState.CustomBorderColor = System.Drawing.Color.White;
             this.btticket.CheckedState.FillColor = System.Drawing.Color.White;
             this.btticket.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.btticket.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btticket.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btticket.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btticket.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btticket.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -124,7 +125,7 @@
             this.btseat.CheckedState.CustomBorderColor = System.Drawing.Color.White;
             this.btseat.CheckedState.FillColor = System.Drawing.Color.White;
             this.btseat.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.btseat.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btseat.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btseat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btseat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btseat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -152,7 +153,7 @@
             this.btstaff.CheckedState.CustomBorderColor = System.Drawing.Color.White;
             this.btstaff.CheckedState.FillColor = System.Drawing.Color.White;
             this.btstaff.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.btstaff.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btstaff.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btstaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btstaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btstaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -163,7 +164,7 @@
             this.btstaff.ForeColor = System.Drawing.Color.White;
             this.btstaff.Image = ((System.Drawing.Image)(resources.GetObject("btstaff.Image")));
             this.btstaff.ImageSize = new System.Drawing.Size(25, 25);
-            this.btstaff.Location = new System.Drawing.Point(42, 350);
+            this.btstaff.Location = new System.Drawing.Point(42, 401);
             this.btstaff.Name = "btstaff";
             this.btstaff.Size = new System.Drawing.Size(56, 34);
             this.btstaff.TabIndex = 52;
@@ -180,7 +181,7 @@
             this.btschedule.CheckedState.CustomBorderColor = System.Drawing.Color.White;
             this.btschedule.CheckedState.FillColor = System.Drawing.Color.White;
             this.btschedule.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.btschedule.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btschedule.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btschedule.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btschedule.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btschedule.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -209,7 +210,7 @@
             this.btmovie.CheckedState.CustomBorderColor = System.Drawing.Color.White;
             this.btmovie.CheckedState.FillColor = System.Drawing.Color.White;
             this.btmovie.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.btmovie.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btmovie.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btmovie.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btmovie.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btmovie.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -262,6 +263,34 @@
             this.buttonexit.TabIndex = 0;
             this.buttonexit.Click += new System.EventHandler(this.buttonexit_Click);
             // 
+            // btroomtype
+            // 
+            this.btroomtype.BackColor = System.Drawing.Color.Transparent;
+            this.btroomtype.BorderRadius = 10;
+            this.btroomtype.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btroomtype.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btroomtype.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.btroomtype.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btroomtype.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btroomtype.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btroomtype.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btroomtype.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btroomtype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btroomtype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btroomtype.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btroomtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btroomtype.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F);
+            this.btroomtype.ForeColor = System.Drawing.Color.White;
+            this.btroomtype.Image = ((System.Drawing.Image)(resources.GetObject("btroomtype.Image")));
+            this.btroomtype.ImageSize = new System.Drawing.Size(25, 25);
+            this.btroomtype.Location = new System.Drawing.Point(42, 352);
+            this.btroomtype.Name = "btroomtype";
+            this.btroomtype.Size = new System.Drawing.Size(56, 34);
+            this.btroomtype.TabIndex = 57;
+            this.btroomtype.UseTransparentBackground = true;
+            this.btroomtype.UseWaitCursor = true;
+            this.btroomtype.CheckedChanged += new System.EventHandler(this.btroomtype_CheckedChanged);
+            // 
             // Form_QL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -269,6 +298,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1033, 575);
+            this.Controls.Add(this.btroomtype);
             this.Controls.Add(this.buttonexit);
             this.Controls.Add(this.btroom);
             this.Controls.Add(this.btticket);
@@ -303,6 +333,7 @@
         private Guna.UI2.WinForms.Guna2Panel paneltrans;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Button buttonexit;
+        private Guna.UI2.WinForms.Guna2Button btroomtype;
     }
 }
 
