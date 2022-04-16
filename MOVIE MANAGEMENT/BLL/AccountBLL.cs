@@ -7,9 +7,10 @@ using System.Data.SqlClient;
 using System.Data;
 using EmailValidation;
 using System.Text.RegularExpressions;
+using System.Net.Mail;
+using System.Security.Cryptography;
 using DAL;
 using DTO;
-using System.Net.Mail;
 
 namespace BLL
 {
@@ -43,6 +44,10 @@ namespace BLL
         {
             return AccountDAL.Instance.CheckRole(username);
         }
+        public bool CheckChangePass(string username)
+        {
+            return AccountDAL.Instance.CheckChangePass(username);
+        }
         public bool CheckPhoneNumber(string pn)
         {
             return Regex.IsMatch(pn, "^[0-9]{10}$");
@@ -73,15 +78,53 @@ namespace BLL
             if (!CheckEmailExist(account.Email)) return "Email address does not exist!";
             return "OK";
         }
+        private int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
+        }
+        private string RandomString(int size, bool lowerCase)
+        {
+            StringBuilder builder = new StringBuilder();
+            Random random = new Random();
+            char ch;
+            for (int i = 0; i < size; i++)
+            {
+                ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
+                builder.Append(ch);
+            }
+            if (lowerCase)
+                return builder.ToString().ToLower();
+            return builder.ToString();
+        }
+        public string RandomPassword()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.Append(RandomString(4, true));
+            builder.Append(RandomNumber(1000, 9999));
+            builder.Append(RandomString(2, false));
+            return builder.ToString();
+        }
+        public string HashPass(string password)
+        {
+            SHA1CryptoServiceProvider sha1 = new SHA1CryptoServiceProvider();
+            byte[] password_bytes = Encoding.ASCII.GetBytes(password);
+            byte[] encrypted_bytes = sha1.ComputeHash(password_bytes);
+            return Convert.ToBase64String(encrypted_bytes);
+        }
         public string Add(Account account)
         {
             string check = CheckAccount(account);
             if (check != "OK") return check;
+
+            string pwd = RandomPassword() ;
+            account.Password = HashPass(pwd);
+
             check = AccountDAL.Instance.Add(account);
             if(check == "OK")
             {
                 email_employee = account.Email;
-                content = "Welcome to CINESTAR CINEMA.<br>We create a new account for you.<br>Username: "+account.Username+"<br>Password: "+account.Username;
+                content = "Welcome to CINESTAR CINEMA.<br>We create a new account for you.<br>Username: "+account.Username+"<br>Password: "+pwd;
                 SendEmail(email_employee,content,"YOUR NEW ACCOUNT AT CINESTAR CINEMA.");
             }
             return check;
@@ -112,7 +155,7 @@ namespace BLL
         public bool CheckLogin(string username, string password)
         {
             if(!(CheckUsernamePass(username) && CheckUsernamePass(password))) return false;
-            return AccountDAL.Instance.CheckLogin(username, password);
+            return AccountDAL.Instance.CheckLogin(username, HashPass(password));
         }
         public string CheckAndSendMailToReset(string email)
         {
@@ -121,16 +164,14 @@ namespace BLL
             if (check == "OK")
             {
                 email_employee = email;
-                Random otp = new Random();
-                content = otp.Next(99999, 1000000).ToString();
+                content = RandomNumber(99999, 1000000).ToString();
                 SendEmail(email_employee,content,"RESET PASSWORD");
             }
             return check;
         }
         public void CheckAndSendMailToFirstLogin(string username)
         {
-            Random otp = new Random();
-            content = otp.Next(99999,1000000).ToString();
+            content = RandomNumber(99999, 1000000).ToString();
             SendEmail(GetEmailByUsername(username), content, "FIRST LOGIN");
         }
         public void SendEmail(string email, string content, string subject)
@@ -162,8 +203,9 @@ namespace BLL
             if (CheckUsernamePass(newpass))
             {
                 if(confirmpass == newpass)
-                {
-                    check = AccountDAL.Instance.ResetPass(newpass, email_employee);
+                { 
+                    AccountDAL.Instance.ResetPass(HashPass(newpass), email_employee);
+                    check = "OK";
                 }
                 else check = "Your confirm password doesn't match your new password";
 

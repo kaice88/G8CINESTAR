@@ -30,11 +30,6 @@ namespace GUI
                     f.Show();
                     Hide();
                     break;
-                case "Password not be same with username.":
-                    labelfail.Text = check;
-                    txtnewpass.Text = "";
-                    txtconfirmpass.Text = "";
-                    break;
                 default:
                     labelfail.Text = check;
                     txtconfirmpass.Text = "";

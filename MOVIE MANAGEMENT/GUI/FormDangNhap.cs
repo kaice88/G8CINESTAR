@@ -32,11 +32,12 @@ namespace GUI
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
+            
             if (!AccountBLL.Instance.CheckLogin(username, password))
                 formfail("The username or password is incorrect. Try again.", 94, 125, 160, 187);
             else
             {
-                if(username == password)
+                if(AccountBLL.Instance.CheckChangePass(username))
                 {
                     MessageBox.Show("This is the first time you sign in.\nWe sent a email for you.\nPlease check your email to get OTP and change your password.");
                     AccountBLL.Instance.CheckAndSendMailToFirstLogin(username);

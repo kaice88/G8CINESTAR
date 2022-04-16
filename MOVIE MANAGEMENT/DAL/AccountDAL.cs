@@ -28,6 +28,12 @@ namespace DAL
             return Convert.ToBoolean(LoadData(query).Rows[0][0].ToString().Trim());
 
         }
+        public bool CheckChangePass(string check)// by email or username
+        {
+            string query = "Select changepwd from TBStaff where username = '" + check + "' or email = '" + check + "'";
+            return Convert.ToBoolean(LoadData(query).Rows[0][0].ToString().Trim());
+
+        }
         public string CheckAdd(Account account)
         {
             string query = "Select email from TBStaff where email = '" + account.Email + "'";
@@ -41,8 +47,6 @@ namespace DAL
             if (LoadData(query).Rows.Count != 0) return "Email address is already registered!";
             query = "Select username from TBStaff where username = '" + account.Username + "' and id_number != " + account.ID;
             if (LoadData(query).Rows.Count != 0) return "Username is already being used!";
-            query = "Select pwd from TBStaff where email = '" + account.Email + "';";
-            if (LoadData(query).Rows[0][0].ToString().Trim() == account.Username) return "Password not be same with username.";
             return "OK";
         }
         public string Add(Account account)
@@ -51,7 +55,7 @@ namespace DAL
             if (check != "OK") return check;
 
             // add
-            string query ="Insert into TBStaff(fullname, username, pwd, phone_number, email,role ) values('" 
+            string query = "Insert into TBStaff(fullname, username, pwd, phone_number, email,role) values('"
                           + account.Fullname + "','" + account.Username + "','" + account.Password + "','" + account.Phone + "','" 
                           + account.Email + "','" + account.Role + "')";
             EditData(query);
@@ -61,6 +65,16 @@ namespace DAL
         {
             string query = "SELECT email FROM TBStaff where username = '"+username+"';";
             return LoadData(query).Rows[0][0].ToString();
+        }
+        //public string GetUsernameByEmail(string email)
+        //{
+        //    string query = "SELECT username  FROM TBStaff where email = '" + email + "';";
+        //    return LoadData(query).Rows[0][0].ToString();
+        //}
+        public void ChangedPass(string email)
+        {
+            string query = "UPDATE TBStaff set changepwd = 'false' where email = '" + email+"'";
+            EditData(query);
         }
         public string Update(Account account)
         {
@@ -103,13 +117,11 @@ namespace DAL
             return "OK";
 
         }
-        public string ResetPass(string newpass, string email)
+        public void ResetPass(string newpass, string email)
         {
-            string query = "Select username from TBStaff where email = '" + email + "'";
-            if (LoadData(query).Rows[0][0].ToString().Trim() == newpass) return "Password not be same with username.";
-            query = "Update TBStaff Set pwd = '" + newpass + "' Where email = '" + email + "';";
+            if (CheckChangePass(email)) ChangedPass(email);
+            string query = "Update TBStaff Set pwd = '" + newpass + "' Where email = '" + email + "';";
             EditData(query);
-            return "OK";
         }
         public void Delete(int id)
         {
