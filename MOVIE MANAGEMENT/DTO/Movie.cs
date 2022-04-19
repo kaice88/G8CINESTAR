@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DTO
 {
@@ -14,5 +15,7 @@ namespace DTO
         public string Description { get; set; }
         public int Length { get; set; }
         public DateTime Release { get; set; }
+        public Byte[] Image { get; set; }
+
     }
 }

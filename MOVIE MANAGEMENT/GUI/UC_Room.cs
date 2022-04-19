@@ -15,6 +15,7 @@ namespace GUI
             InitializeComponent();
             txtid.Enabled = false;
             ShowDGV();
+	    
         }
         public void LoadComboboxType()
         {

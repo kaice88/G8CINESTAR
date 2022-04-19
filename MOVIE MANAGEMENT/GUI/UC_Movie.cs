@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,12 +18,36 @@ namespace GUI
         public UC_Movie()
         {
             InitializeComponent();
+	    txtid.Enable = false;	
             ShowDGV();
+        }
+        private static string file = "";
+        public void LoadComboboxMovieGenres()
+        {
+            cbbgenres.Items.Clear();
+            foreach (string i in MovieBLL.Instance.GetListMovieGenres().Distinct())
+            {
+                cbbgenres.Items.Add(i.Trim());
+            }
         }
         public void ShowDGV(string txt = "All")
         {
+ 	    LoadComboboxMovieGenres();
             if (txt == "All") dataGridView1.DataSource = MovieBLL.Instance.LoadAllMovie();
             else dataGridView1.DataSource = MovieBLL.Instance.LoadSearchMovie(txt);
+        }
+        public Image byteArrayToImage(byte[] image)
+        {
+            MemoryStream memoryStream = new MemoryStream(image, 0, image.Length);
+            memoryStream.Write(image, 0, image.Length);
+            //Exception occurs here
+            return Image.FromStream(memoryStream, true); 
+        }
+        public Byte[] ImagetoByteArray(PictureBox picturebox) // doi kieu image sang byte[]
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            picturebox.Image.Save(memoryStream, picturebox.Image.RawFormat);
+            return memoryStream.ToArray();
         }
 
         public Movie GetMovieInScreen(bool check = false) // false: update, true: add
@@ -30,10 +55,11 @@ namespace GUI
             Movie movie = new Movie();
             if (check == false) movie.ID = Convert.ToInt32(txtid.Text);
             movie.Name = txtname.Text;
-            movie.Genres = txtgenres.Text;
+            movie.Genres = cbbgenres.Text;
             movie.Length = Convert.ToInt32(txtlength.Text);
-            movie.Release = Convert.ToDateTime(dtrelease.ToString());
+            movie.Release = Convert.ToDateTime(dtrelease.Value.ToString());
             movie.Description = txtdescription.Text;
+            movie.Image = ImagetoByteArray(picbox_imagemovie);
             return movie;
         }
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -79,9 +105,10 @@ namespace GUI
         {
             txtid.Text = "";
             txtname.Text = "";
-            txtlength.Text = "";
+            cbbgenres.Text = "";
             txtdescription.Text = "";
-            txtgenres.Text = "";
+            txtlength.Text = "";
+            picbox_imagemovie.Image = null;
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -121,12 +148,25 @@ namespace GUI
 
                     txtid.Text = row[0].ToString().Trim();
                     txtname.Text = row[1].ToString().Trim();
-                    txtgenres.Text = row[2].ToString().Trim();
+                    cbbgenres.Text = row[2].ToString().Trim();
                     txtdescription.Text = row[3].ToString().Trim();
                     txtlength.Text = row[4].ToString().Trim();
                     dtrelease.Value = Convert.ToDateTime(row[5].ToString());
+                    picbox_imagemovie.Image = byteArrayToImage((byte[])row[6]);
                 }
             }
+        }
+        public string GetFileNameofImage()
+        {
+            openFileDialog1.ShowDialog();
+            return openFileDialog1.FileName.ToString();
+        }
+        private void btimage_Click(object sender, EventArgs e)
+        {
+            file = GetFileNameofImage();
+            if (string.IsNullOrEmpty(file)) return;
+            Image image = Image.FromFile(file);
+            picbox_imagemovie.Image = image;
         }
     }
 }

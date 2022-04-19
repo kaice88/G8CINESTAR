@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.IO;
 using DAL;
 using DTO;
+using System.Drawing;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BLL
 {
@@ -22,6 +25,7 @@ namespace BLL
             }
             set { }
         }
+
         public string CheckMovie(Movie movie)
         {
             if (movie.Name == "") return "Invalid Movie name. Please enter your movie name.";
@@ -29,6 +33,7 @@ namespace BLL
             if (movie.Description == "") return "Invalid Movie description. Please enter your movie description.";
             if ((movie.Length).ToString() == "") return "Invalid Movie length. Please enter your movie length.";
             if (movie.Genres == "") return "Invalid Movie genres. Please enter your movie genres.";
+            if (movie.Image.ToString() == "") return "Invalid Movie image. Please enter your movie image.";
             return "OK";
         }
         public string Add(Movie movie)
@@ -62,6 +67,17 @@ namespace BLL
             {
                 MovieDAL.Instance.Delete(i);
             }
+        }
+        public List<string> GetListMovieGenres()
+        {
+            List<string> list = new List<string>();
+            DataTable dt = new DataTable();
+            dt = MovieDAL.Instance.GetListMovieGenres();
+            foreach (DataRow row in dt.Rows)
+            {
+                list.Add(row["movie_genres"].ToString());
+            }
+            return list;
         }
     }
 }

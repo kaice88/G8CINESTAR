@@ -24,13 +24,13 @@ namespace DAL
         }
         public string CheckAdd(Movie movie)
         {
-            string query = "Select username from TBMovie where movie_name = '" + movie.Name + "'";
+            string query = "Select movie_name from TBMovie where movie_name = '" + movie.Name + "'";
             if (LoadData(query).Rows.Count != 0) return "MOVIE NAME TRUNG";
             return "OK";
         }
         public string CheckUpdate(Movie movie)
         {
-            string query = "Select username from TBMovie where movie_name = '" + movie.Name + "' and id_number != " + movie.ID;
+            string query = "Select movie_name from TBMovie where movie_name = '" + movie.Name + "' and movie_id != " + movie.ID;
             if (LoadData(query).Rows.Count != 0) return "MOVIE NAME TRUNG";
             return "OK";
         }
@@ -40,10 +40,11 @@ namespace DAL
             if (check != "OK") return check;
 
             // add
-            string query = "Insert into TBMovie(movie_name, movie_genres, movie_description, movie_length, movie_release) values('"
-                          + movie.Name + "','" + movie.Genres + "','" + movie.Description + "','" + movie.Length + "','"
-                          + movie.Release + "')";
-            EditData(query);
+            string query = "Insert into TBMovie values(@movie_name, @movie_genres, @movie_description, @movie_length, @movie_release, @movie_image) ";
+            // string query = "Insert into TBMovie(movie_name, movie_genres, movie_description, movie_length, movie_release , movie_image) values('"
+            //+ movie.Name + "','" + movie.Genres + "','" + movie.Description + "','" + movie.Length + "','"
+            // + movie.Release + "','" +movie.Image+"')";
+            CommandMovie(movie, query);
             return "OK";
         }
         public string Update(Movie movie)
@@ -52,9 +53,8 @@ namespace DAL
             if (check != "OK") return check;
 
             // ud  
-            string query = "UPDATE TBMovie set fullname = '" + movie.Name + "','" + movie.Genres + "','" + movie.Description + "','" + movie.Length + "','"
-                          + movie.Release + "' where movie_id = " + movie.ID;
-            EditData(query);
+            string query = "UPDATE TBMovie set movie_name = @movie_name,movie_genres = @movie_genres, movie_description=@movie_description,movie_length= @movie_length, movie_release=@movie_release,movie_image=@movie_image where movie_id = @movie_id";
+            CommandMovie(movie, query);
             return "OK";
         }
         public DataTable LoadAllMovie()
@@ -76,6 +76,11 @@ namespace DAL
         {
             string query = "DELETE FROM TBMovie WHERE movie_id = " + id + ";";
             EditData(query);
+        }
+        public DataTable GetListMovieGenres()
+        {
+            string query = "SELECT movie_genres FROM TBMovie";
+            return LoadData(query);
         }
     }
 }
