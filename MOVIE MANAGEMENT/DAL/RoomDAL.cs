@@ -93,5 +93,16 @@ namespace DAL
             string query = "DELETE FROM TBRoom WHERE room_id = " + id + ";";
             EditData(query);
         }
+        // them moi toi ngay 21_4
+        public DataRow GetNumberofSeatByID(int id)
+        {
+            string query = "SELECT room_number_of_seat FROM TBRoom";
+            return LoadData(query).Rows[0];
+        }
+        public DataRow GetNumberofRowByID(int id)
+        {
+            string query = "SELECT room_number_of_row FROM TBRoom";
+            return LoadData(query).Rows[0];
+        }
     }
 }

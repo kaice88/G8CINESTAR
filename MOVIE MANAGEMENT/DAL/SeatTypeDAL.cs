@@ -24,6 +24,8 @@ namespace DAL
         {
             string query = "Select seat_type from TBSeatType where seat_type = '" + seattype.Name + "'";
             if (LoadData(query).Rows.Count != 0) return "Seat Type name already exists";
+            query = "Select seat_type_color from TBSeatType where seat_type_color = '" + seattype.Color + "'";
+            if (LoadData(query).Rows.Count != 0) return "Seat Type color already exists";
             return "OK";
         }
         public string Add(SeatType seattype)
@@ -32,8 +34,8 @@ namespace DAL
             if (check != "OK") return check;
 
             // add
-            string query = "Insert into TBSeatType(seat_type,seat_price ) values('"
-                          + seattype.Name + "'," + seattype.Price + ")";
+            string query = "Insert into TBSeatType(seat_type,seat_price, seat_type_color ) values('"
+                          + seattype.Name + "'," + seattype.Price + ","+ seattype.Color+ ")";
             EditData(query);
             return "OK";
         }
@@ -41,6 +43,8 @@ namespace DAL
         {
             string query = "Select seat_type from TBSeatType where seat_type = '" + seattype.Name + "' and seat_type_id != " + seattype.ID;
             if (LoadData(query).Rows.Count != 0) return "Seat Type name already exists";
+            query = "Select seat_type_color from TBSeatType where seat_type_color = '" + seattype.Color + "' and seat_type_id != " + seattype.ID;
+            if (LoadData(query).Rows.Count != 0) return "Seat Type color already exists";
             return "OK";
         }
         public string Update(SeatType seattype)
@@ -49,7 +53,7 @@ namespace DAL
             if (check != "OK") return check;
 
             // ud  
-            string query = "UPDATE TBSeatType set seat_type = '" + seattype.Name + "', seat_price = '" + seattype.Price + "' where seat_type_id = " + seattype.ID;
+            string query = "UPDATE TBSeatType set seat_type = '" + seattype.Name + "', seat_price = '" + seattype.Price +"' , seat_type_color = '"+seattype.Color+ "' where seat_type_id = " + seattype.ID;
             EditData(query);
             return "OK";
         }
@@ -71,6 +75,17 @@ namespace DAL
         public DataRow LoadSeatTypeByID(int id)
         {
             string query = "SELECT * FROM TBSeatType WHERE seat_type_id = " + id + ";";
+            return LoadData(query).Rows[0];
+        }
+        public DataRow LoadIDBySeatTypeColor(int color)
+        {
+            string query = "SELECT seat_type_id FROM TBSeatType WHERE seat_type_color = " + color + ";";
+            return LoadData(query).Rows[0];
+        }
+     //
+        public DataRow GetSeatTypeColorByID(int id)
+        {
+            string query = "SELECT seat_type_color FROM TBSeatType Where seat_type_id =" + id + ";";
             return LoadData(query).Rows[0];
         }
     }

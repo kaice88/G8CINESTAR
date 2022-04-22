@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SeatType));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaDelete = new Guna.UI2.WinForms.Guna2Button();
             this.buttonUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.buttonAdd = new Guna.UI2.WinForms.Guna2Button();
@@ -43,11 +44,15 @@
             this.txtseattype = new Guna.UI2.WinForms.Guna2TextBox();
             this.butSearch = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.seat_type_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seat_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seat_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.btcolor = new Guna.UI2.WinForms.Guna2Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -113,6 +118,7 @@
             this.panel2.BorderRadius = 10;
             this.panel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.panel2.BorderThickness = 2;
+            this.panel2.Controls.Add(this.btcolor);
             this.panel2.Controls.Add(this.txtid);
             this.panel2.Controls.Add(this.buttonReset);
             this.panel2.Controls.Add(this.txtprice);
@@ -234,52 +240,52 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.ColumnHeadersHeight = 55;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.seat_type_id,
             this.seat_type,
             this.seat_price});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
             this.dataGridView1.Location = new System.Drawing.Point(56, 272);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
@@ -310,6 +316,33 @@
             this.dataGridView1.UseWaitCursor = true;
             this.dataGridView1.VirtualMode = true;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // seat_type_id
+            // 
+            this.seat_type_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.seat_type_id.DataPropertyName = "seat_type_id";
+            this.seat_type_id.HeaderText = "ID";
+            this.seat_type_id.MinimumWidth = 6;
+            this.seat_type_id.Name = "seat_type_id";
+            this.seat_type_id.Width = 118;
+            // 
+            // seat_type
+            // 
+            this.seat_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.seat_type.DataPropertyName = "seat_type";
+            this.seat_type.HeaderText = "Seat Type";
+            this.seat_type.MinimumWidth = 6;
+            this.seat_type.Name = "seat_type";
+            this.seat_type.Width = 320;
+            // 
+            // seat_price
+            // 
+            this.seat_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.seat_price.DataPropertyName = "seat_price";
+            this.seat_price.HeaderText = "Price";
+            this.seat_price.MinimumWidth = 6;
+            this.seat_price.Name = "seat_price";
+            this.seat_price.Width = 320;
             // 
             // txtSearch
             // 
@@ -346,32 +379,42 @@
             this.label2.TabIndex = 97;
             this.label2.Text = "Seat Type !";
             // 
-            // seat_type_id
+            // btcolor
             // 
-            this.seat_type_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.seat_type_id.DataPropertyName = "seat_type_id";
-            this.seat_type_id.HeaderText = "ID";
-            this.seat_type_id.MinimumWidth = 6;
-            this.seat_type_id.Name = "seat_type_id";
-            this.seat_type_id.Width = 118;
+            this.btcolor.BackColor = System.Drawing.Color.Transparent;
+            this.btcolor.BorderRadius = 8;
+            this.btcolor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btcolor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btcolor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btcolor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btcolor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(66)))), ((int)(((byte)(110)))));
+            this.btcolor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btcolor.ForeColor = System.Drawing.Color.White;
+            this.btcolor.Location = new System.Drawing.Point(275, 97);
+            this.btcolor.Name = "btcolor";
+            this.btcolor.Size = new System.Drawing.Size(195, 35);
+            this.btcolor.TabIndex = 98;
+            this.btcolor.Text = "Color";
+            this.btcolor.Click += new System.EventHandler(this.btcolor_Click);
             // 
-            // seat_type
+            // contextMenuStrip1
             // 
-            this.seat_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.seat_type.DataPropertyName = "seat_type";
-            this.seat_type.HeaderText = "Seat Type";
-            this.seat_type.MinimumWidth = 6;
-            this.seat_type.Name = "seat_type";
-            this.seat_type.Width = 320;
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // seat_price
+            // guna2ContextMenuStrip1
             // 
-            this.seat_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.seat_price.DataPropertyName = "seat_price";
-            this.seat_price.HeaderText = "Price";
-            this.seat_price.MinimumWidth = 6;
-            this.seat_price.Name = "seat_price";
-            this.seat_price.Width = 320;
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // UC_SeatType
             // 
@@ -410,6 +453,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn seat_type_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn seat_type;
         private System.Windows.Forms.DataGridViewTextBoxColumn seat_price;
+        private Guna.UI2.WinForms.Guna2Button btcolor;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }
 

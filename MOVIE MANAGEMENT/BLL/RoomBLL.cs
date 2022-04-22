@@ -65,5 +65,14 @@ namespace BLL
                 RoomDAL.Instance.Delete(i);
             }
         }
+        // moi them toi 21_4
+        public int GetNumberofSeatByID(int id)
+        {
+            return Convert.ToInt32(RoomDAL.Instance.GetNumberofSeatByID(id)[0].ToString());
+        }
+        public int GetNumberofRowByID(int id)
+        {
+            return Convert.ToInt32(RoomDAL.Instance.GetNumberofRowByID(id)[0].ToString());
+        }
     }
 }

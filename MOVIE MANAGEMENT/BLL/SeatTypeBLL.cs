@@ -26,6 +26,7 @@ namespace BLL
         {
             if (seattype.Name == "") return "Invalid Seat Type name. Please enter Seat Type name.";
             if (seattype.Price == 0) return "Invalid Seat Type price. Please enter Seat Type price.";
+            if (seattype.Color == -15318418) return "Invalid Seat Type color. Please choose Seat Type color.";
             return "OK";
         }
         public string Add(SeatType seattype)
@@ -61,5 +62,14 @@ namespace BLL
         {
             return SeatTypeDAL.Instance.LoadSeatTypeByID(id);
         }
+        public int GetSeatTypeColorByID(int id)
+        {
+            return Convert.ToInt32(SeatTypeDAL.Instance.GetSeatTypeColorByID(id)[0].ToString());
+        }
+        public DataRow LoadIDBySeatTypeColor(int color)
+        {
+            return SeatTypeDAL.Instance.LoadIDBySeatTypeColor(color);
+        }
+        
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="FormResetMK3.Designer.cs">
       <DependentUpon>FormResetMK3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSeatMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeatMap.Designer.cs">
+      <DependentUpon>FormSeatMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_NV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormResetMK3.resx">
       <DependentUpon>FormResetMK3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeatMap.resx">
+      <DependentUpon>FormSeatMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_QL.resx">
       <DependentUpon>Form_QL.cs</DependentUpon>

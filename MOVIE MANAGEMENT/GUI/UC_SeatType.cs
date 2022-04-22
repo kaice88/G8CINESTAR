@@ -19,6 +19,7 @@ namespace GUI
             InitializeComponent();
             txtid.Enabled = false;
             ShowDGV();
+            
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -81,6 +82,7 @@ namespace GUI
             if (check == false) seattype.ID = Convert.ToInt32(txtid.Text.ToString());
             seattype.Name = txtseattype.Text;
             seattype.Price = Convert.ToInt32(txtprice.Text.ToString());
+            seattype.Color = btcolor.FillColor.ToArgb();
             return seattype;
         }
         public void ShowDGV(string txt = "All")
@@ -121,6 +123,7 @@ namespace GUI
             txtid.Text = "";
             txtseattype.Text = "";
             txtprice.Text = "";
+            btcolor.FillColor = Color.FromArgb(22, 66, 110);
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -135,7 +138,19 @@ namespace GUI
                     txtid.Text = row[0].ToString().Trim();
                     txtseattype.Text = row[1].ToString().Trim();
                     txtprice.Text = row[2].ToString().Trim();
+                    btcolor.FillColor = Color.FromArgb(Convert.ToInt32(row[3].ToString()));
+                    
                 }
+            }
+        }
+
+        private void btcolor_Click(object sender, EventArgs e)
+        {
+            ColorDialog dlg = new ColorDialog();
+            if(dlg.ShowDialog() == DialogResult.OK)
+            {
+                btcolor.FillColor = dlg.Color;
+                
             }
         }
     }

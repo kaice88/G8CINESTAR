@@ -18,7 +18,7 @@ namespace GUI
         public UC_Movie()
         {
             InitializeComponent();
-	    txtid.Enable = false;	
+	        txtid.Enabled = false;	
             ShowDGV();
         }
         private static string file = "";
@@ -144,6 +144,7 @@ namespace GUI
             {
                 if (dataGridView1.CurrentRow.Cells[0].Value.ToString() != "")
                 {
+                    picbox_imagemovie.Image = null;
                     DataRow row = MovieBLL.Instance.LoadMovieByID(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString()));
 
                     txtid.Text = row[0].ToString().Trim();
@@ -152,7 +153,13 @@ namespace GUI
                     txtdescription.Text = row[3].ToString().Trim();
                     txtlength.Text = row[4].ToString().Trim();
                     dtrelease.Value = Convert.ToDateTime(row[5].ToString());
-                    picbox_imagemovie.Image = byteArrayToImage((byte[])row[6]);
+                    try
+                    {
+                        picbox_imagemovie.Image = byteArrayToImage((byte[])row[6]);
+                    }
+                    catch { 
+
+                    }
                 }
             }
         }
