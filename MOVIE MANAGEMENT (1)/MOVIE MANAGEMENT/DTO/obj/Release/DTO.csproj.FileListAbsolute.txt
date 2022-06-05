@@ -1,6 +1,0 @@
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DTO\bin\Release\DTO.dll
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DTO\bin\Release\DTO.pdb
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DTO\obj\Release\DTO.csproj.AssemblyReference.cache
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DTO\obj\Release\DTO.dll
-C:\Users\LENOVO\Documents\HK4\PBL3\G8CINESTAR\MOVIE MANAGEMENT\DTO\obj\Release\DTO.pdb
